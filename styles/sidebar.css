@@ -1,0 +1,107 @@
+.sidebar {
+    display: grid;
+    /* position: relative;
+    z-index: 5; */
+    background-color: black;
+    height: 100vh;
+    color: white;
+    font-family: 'Carrois Gothic', sans-serif;
+    grid-template-rows: 30fr 50px 20px minmax(20px, 2fr) 250px minmax(20px, 1fr) 4fr 1fr 2fr 15fr;
+    grid-template-columns: 25px 1fr 25px;
+    grid-template-areas: 
+    "  .            .               ."
+    "  .         name               . "
+    "  .   personal-description     . "
+    "  .            .               ."
+    "  .        benji-photo         . "
+    "  .            .               . "
+    "  .        social-icons        . "
+    "  .            .               . "
+    "  .    navigation-buttons      . "
+    "  .            .               . ";
+    justify-items: center;
+    align-items: center;
+}
+
+.name {
+    grid-area: name;
+    font-size: 30px;
+    opacity: 0.8;
+}
+
+.personal-description {
+    grid-area: personal-description;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.benji-photo {
+    grid-area: benji-photo;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 10;
+    transition: all 0.5s ease;
+}
+
+.benji-photo:hover {
+    box-shadow:         0 0 5px 4px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    /* border: solid 1px white;
+    border-radius: 50%; */
+}
+
+.social-icons {
+    grid-area: social-icons;
+}
+
+.navigation-buttons {
+    grid-area: navigation-buttons;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: 50px;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+.particles-wrapper {
+    position: fixed;
+    z-index: 2;
+    height: 100vh;
+}
+
+.navigation-buttons, .social-icons {
+    position: relative;
+    z-index: 10;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-button, .social-button {
+    color: white;
+    text-decoration: none;
+}
+
+.social-button {
+   font-size: 32px;
+   opacity: 0.5;
+}
+
+.nav-button {
+    font-size: 22px;
+    /* font-size: 18px; */
+    opacity: 0.8;
+}
+
+.social-button, .nav-button {
+    transition: opacity 0.3s ease;
+}
+
+.social-button:hover, .nav-button:hover {
+    opacity: 1;
+}
