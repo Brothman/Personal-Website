@@ -453,8 +453,8 @@ var Sidebar = function Sidebar() {
     to: "/writings"
   }, "Writings"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
     className: "nav-button",
-    to: "/contact"
-  }, "Contact")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_particles_js__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    to: "/enigma"
+  }, "Enigma")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_particles_js__WEBPACK_IMPORTED_MODULE_2___default.a, {
     className: "particles-wrapper",
     params: {
       "particles": {

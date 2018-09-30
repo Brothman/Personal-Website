@@ -29,7 +29,7 @@ const Sidebar = () => {
                 <NavLink className="nav-button" to="/about">About</NavLink>
                 <NavLink className="nav-button" to="/projects">Projects</NavLink>
                 <NavLink className="nav-button" to="/writings">Writings</NavLink>
-                <NavLink className="nav-button" to="/contact">Contact</NavLink>
+                <NavLink className="nav-button" to="/enigma">Enigma</NavLink>
             </div>
 
 
