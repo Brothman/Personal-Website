@@ -1,3 +1,99 @@
+/* 680 px is the maximum width we will give an item */
+
+.writings-container {
+    margin-top: 15px;
+}
+.writing-index-items-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 680px));
+    justify-content: center;
+}
+
+.writing-header {
+    justify-self: center;
+    text-align: center;
+}
 .writing-index-item {
     display: grid;
+
+    grid-template-rows: 15px 30px 80px 10px 30px 30px 15px;
+    grid-template-columns: 20px 300px 50px 1fr 1fr 20px;
+    grid-template-areas: 
+    "  .            .                       .            .                      .        . "
+    " .     writing-title                   .            .               writing-image   . "
+    " .    writing-blurb                    .            .               writing-image   . "
+    "  .            .                       .            .               writing-image   . "
+    " .     writing-author                  .            .               writing-image   . "
+    " .     writing-date-published   writing-read-time   .                writing-image  . "
+    "  .            .                       .            .                     .         . ";
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.writing-index-item:hover {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+.writing-title {
+    grid-area: writing-title;
+    font-family: 'Carrois Gothic';
+}
+
+.writing-blurb {
+    grid-area: writing-blurb;
+    font-size: 16px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    opacity: 0.54;
+}
+
+.writing-author {
+    grid-area: writing-author;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.writing-date-published {
+    grid-area: writing-date-published;
+    opacity: 0.54;
+}
+
+.writing-read-time {
+    grid-area: writing-read-time;
+    opacity: 0.54;
+}
+
+.writing-date-published, .writing-read-time { 
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.writing-image {
+    grid-area: writing-image;
+    height: 100%;
+}
+
+.writing-date-published, .writing-read-time, .writing-author, .writing-blurb {
+    font-family: "Gothic A1", sans-serif;
+}
+
+.writing-date-published, .writing-read-time, .writing-author, .writing-blurb, .writing-title {
+     -webkit-font-smoothing: antialiased;
+     text-rendering: optimizeLegibility;
+}
+
+/* Add an impressive border that seems to be under title of page */ 
+.writing-index-item:first-of-type {
+    border-top: 2px solid black;
+    padding-top: 15px;
+}
+
+/* This is when we can first fit two 680 writing index items on the page */
+/* I.e. 300pm (sidebar) + 1360px (WII's) == 1660px */
+@media only screen and (min-width: 1660px ) {
+    .writing-index-item:nth-of-type(2) {
+        border-top: 2px solid black;
+        padding-top: 15px;
+    }   
 }

@@ -10,7 +10,7 @@ const WritingIndexItem = ( { writing } ) => {
             <p className="writing-author"> {writing.author} </p>
             <p className="writing-date-published"> {writing.datePublished} </p>
             <p className="writing-read-time"> {writing.readTime} </p>
-            <img src={writing.imageUrl} />
+            <img className="writing-image" src={writing.imageUrl} />
         </div>
      );
 }

@@ -514,6 +514,7 @@ var WritingIndexItem = function WritingIndexItem(_ref) {
   }, " ", writing.datePublished, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "writing-read-time"
   }, " ", writing.readTime, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "writing-image",
     src: writing.imageUrl
   }));
 };
@@ -569,19 +570,43 @@ function (_React$Component) {
   _createClass(WritingsPage, [{
     key: "render",
     value: function render() {
-      var writing = {
+      var writing1 = {
         title: "Story",
-        blurb: "A tale of two",
-        author: "Ben mudda",
+        blurb: "A tale of two cities, this story explores the dichotomy of wealth and poverty.",
+        author: "Benji Rothman",
         datePublished: "Sep 28",
         readTime: "5 min",
         imageUrl: "https://cdn-images-1.medium.com/focal/152/156/51/50/1*8FGsHHpV1ckNcvj2mThRhQ.jpeg"
       };
+      var writing2 = {
+        title: "Tale",
+        blurb: "A story of two villages, this tale explores the monism of mind and matter.",
+        author: "Benji Rothman",
+        datePublished: "Sep 28",
+        readTime: "5 min",
+        imageUrl: "https://cdn-images-1.medium.com/focal/152/156/51/50/1*8FGsHHpV1ckNcvj2mThRhQ.jpeg"
+      };
+      var writing3 = {
+        title: "Completion",
+        blurb: "The last bit of fake data. This shall be the ignition into life we've always desired",
+        author: "Benji Rothman",
+        datePublished: "Sep 28",
+        readTime: "10 min",
+        imageUrl: "https://cdn-images-1.medium.com/focal/152/156/51/50/1*8FGsHHpV1ckNcvj2mThRhQ.jpeg"
+      };
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "writings-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "writing-header"
+      }, "My Writings"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "writing-index-items-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writing_index_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        writing: writing
-      }));
+        writing: writing1
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writing_index_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        writing: writing2
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writing_index_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        writing: writing3
+      })));
     }
   }]);
 
