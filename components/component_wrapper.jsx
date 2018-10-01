@@ -10,7 +10,9 @@ const ComponentWrapper = (props) => {
     return (
         <div className="app-wrapper">
             <Sidebar />
-            <Route path='/' component={WritingsPage} />
+            <Route path='/projects' component={ProjectsPage} />
+            <Route path='/' component={About} />
+            <Route path='/writings' component={WritingsPage} />
         </div>
     );
 };

@@ -1,31 +1,62 @@
-/* 680 px is the maximum width we will give an item */
+
+.dot {
+  height: 4px;
+  width: 4px;
+  background-color: rgba(0, 0, 0, 0.54);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  left: 10px;
+  bottom: 2px;
+}
 
 .writings-container {
     margin-top: 15px;
+    /* This is a hacky height fix to ensure we get the scroll only writing/project index items */
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+/* 680 px is the maximum width we will give an item */
 .writing-index-items-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(auto, 680px));
     justify-content: center;
+    overflow-y: auto;
 }
 
 .writing-header {
     justify-self: center;
     text-align: center;
+    min-width: 695px;
+    border-bottom: 2px solid rgba(204, 204, 204, 0.5);
+    padding-bottom: 15px;
+    padding-top: 0;
+    font-family: "Gothic A1";
 }
+
+@media only screen and (min-width: 1660px ) {
+    .writing-header {
+        min-width: 1360px;
+    }
+}
+
+
 .writing-index-item {
     display: grid;
 
     grid-template-rows: 15px 30px 80px 10px 30px 30px 15px;
-    grid-template-columns: 20px 300px 50px 1fr 1fr 20px;
+    grid-template-columns: 30px 300px 1fr 1fr 30px;
     grid-template-areas: 
-    "  .            .                       .            .                      .        . "
-    " .     writing-title                   .            .               writing-image   . "
-    " .    writing-blurb                    .            .               writing-image   . "
-    "  .            .                       .            .               writing-image   . "
-    " .     writing-author                  .            .               writing-image   . "
-    " .     writing-date-published   writing-read-time   .                writing-image  . "
-    "  .            .                       .            .                     .         . ";
+    "  .            .                              .                      .        . "
+    " .     writing-title                          .               writing-image   . "
+    " .    writing-blurb                           .               writing-image   . "
+    "  .            .                              .               writing-image   . "
+    " .     writing-author                         .               writing-image   . "
+    " .     writing-date-published                 .                writing-image  . "
+    "  .            .                              .                     .         . ";
     align-items: center;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -61,7 +92,10 @@
 
 .writing-read-time {
     grid-area: writing-read-time;
-    opacity: 0.54;
+    /* opacity: 0.54; */
+    position: relative;
+    /* right: 225px; */
+    left: 15px;
 }
 
 .writing-date-published, .writing-read-time { 
@@ -85,15 +119,15 @@
 
 /* Add an impressive border that seems to be under title of page */ 
 .writing-index-item:first-of-type {
-    border-top: 2px solid black;
-    padding-top: 15px;
+    /* border-top: 2px solid black;
+    padding-top: 15px; */
 }
 
 /* This is when we can first fit two 680 writing index items on the page */
 /* I.e. 300pm (sidebar) + 1360px (WII's) == 1660px */
 @media only screen and (min-width: 1660px ) {
     .writing-index-item:nth-of-type(2) {
-        border-top: 2px solid black;
-        padding-top: 15px;
+        /* border-top: 2px solid black;
+        padding-top: 15px; */
     }   
 }

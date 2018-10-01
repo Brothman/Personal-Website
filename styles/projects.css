@@ -1,0 +1,14 @@
+.projects-container {
+    margin-top: 15px;
+    /* This is a hacky height fix to ensure we get the scroll only writing/project index items */
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.project-index-item-container {
+    width: 100%;
+}
+

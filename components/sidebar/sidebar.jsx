@@ -26,10 +26,10 @@ const Sidebar = () => {
             </div>
 
             <div className="navigation-buttons">
-                <NavLink className="nav-button" to="/about">About</NavLink>
-                <NavLink className="nav-button" to="/projects">Projects</NavLink>
-                <NavLink className="nav-button" to="/writings">Writings</NavLink>
-                <NavLink className="nav-button" to="/enigma">Enigma</NavLink>
+                <NavLink activeStyle={{ opacity: 1 }} className="nav-button" to="/about">About</NavLink>
+                <NavLink activeStyle={{ opacity: 1 }} className="nav-button" to="/projects">Projects</NavLink>
+                <NavLink activeStyle={{ opacity: 1 }} className="nav-button" to="/writings">Writings</NavLink>
+                <NavLink activeStyle={{ opacity: 1 }} className="nav-button" to="/enigma">Enigma</NavLink>
             </div>
 
 
