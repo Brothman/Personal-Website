@@ -1,7 +1,7 @@
 
 <h1 align="center" font-size="80"> Personal Website </h1>
 <p align="center">
-  <a href="http://mortal-note.herokuapp.com">
+  <a href="http://benjirothman.com" border-radius="50%">
     <img alt="Benji Logo" src="https://s3.us-east-2.amazonaws.com/benji-personal-website/Larger_Color_Corrected.jpg" width="250px" height="250px" border-radius="50%" />
   </a>
 </p>
