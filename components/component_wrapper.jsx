@@ -11,10 +11,12 @@ const ComponentWrapper = (props) => {
         <div className="app-wrapper">
             <Sidebar />
             <Route path='/projects' component={ProjectsPage} />
-            <Route path='/' component={About} />
-            <Route path='/writings' component={WritingsPage} />
+            <Route path='/about' component={About} />
+            <Route path='/' component={WritingsPage} />
         </div>
     );
 };
 
 export default ComponentWrapper;
+
+// {/* <Route exact path='/' component={LandingPage} /> */}
