@@ -282,7 +282,7 @@ function (_React$Component) {
         d: "M63.962 66.978v11.063h13.624l-1.284 14.349-12.34 3.331v11.51l22.682-6.286.166-1.87 2.6-29.127.27-2.97h-2.982zM63.962 44.583v11.064h26.725l.221-2.487.505-5.608.265-2.969z"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         onClick: this.visitAWS,
-        class: " skill-icon devicon-amazonwebservices-plain-wordmark colored"
+        className: " skill-icon devicon-amazonwebservices-plain-wordmark colored"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         onClick: this.visitJQuery,
         className: " skill-icon devicon-jquery-plain-wordmark colored"
@@ -302,19 +302,19 @@ function (_React$Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
         opacity: ".668",
         fill: "url(#b)",
-        "enable-background": "new",
+        enableBackground: "new",
         d: "M309.335 439.686s30.719 20.479 45.613 24.513c14.894 4.035 30.408 8.378 30.408 8.378l-35.373 86.88 15.204.621 19.86-49.026-.622-71.676-75.09.31z"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
         fill: "#fff",
-        "fill-opacity": ".44",
+        fillOpacity: ".44",
         d: "M337.881 531.221l31.956 30.733-59.571-1.256s-1.861-18.927-1.241-28.856l3.723-9.929 25.133 9.308z"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-        "fill-opacity": ".362",
+        fillOpacity: ".362",
         d: "M94.085 125.365l-28.856-29.788-26.375-9.929-20.479-45.612 21.721-36.304-14.584-.621-5.896 5.586-2.172 4.344-1.552 112.945 78.193-.621z"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
         opacity: ".5",
         fill: "#83222D",
-        "enable-background": "new",
+        enableBackground: "new",
         d: "M111.773 77.89s-29.167 9.309-46.543 17.997c-17.376 8.688-26.685 29.787-26.685 29.787s37.234-1.861 51.197-1.241c13.963.621 20.479.621 21.72-18.927 1.241-19.548.311-27.616.311-27.616z"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
         d: "M26.435 96.422v18.326h4.674v-4.773l4.254 4.254h7.172l-5.688-5.688s4.093-.067 4.402-5.984c0-5.43-4.097-6.134-8.83-6.134h-5.984zm4.897 4.971h4.031v3.265h-4.031v-3.265z"
@@ -354,12 +354,12 @@ function (_React$Component) {
         d: "M68.952 78.045l1.552 5.586 8.223.465-2.949-6.051h-6.826z"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
         stroke: "#5E000E",
-        "stroke-width": "3",
+        strokeWidth: "3",
         d: "M17.444 125.054s.188-29.538.188-59.564c0-58.159-4.901-62.491 21.194-62.491h72.635v83.889c0 27.615 3.921 38.433-23.859 38.433-27.78.001-70.158-.267-70.158-.267z",
         fill: "none"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         onClick: this.visitRuby,
-        class: "skill-icon devicon-ruby-plain-wordmark colored"
+        className: "skill-icon devicon-ruby-plain-wordmark colored"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
         onClick: this.visitNode,
         className: "svg-skill-icon",
@@ -391,7 +391,7 @@ function (_React$Component) {
         className: "resume-icons"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         onClick: this.visitResume,
-        class: "skill-icon far fa-file"
+        className: "skill-icon far fa-file"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "help"
       }, "I can help."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -443,8 +443,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _landing_page_landing_page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./landing_page/landing_page */ "./components/landing_page/landing_page.jsx");
 /* harmony import */ var _projects_page_projects_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./projects_page/projects_page */ "./components/projects_page/projects_page.jsx");
 /* harmony import */ var _writings_page_writings_page__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./writings_page/writings_page */ "./components/writings_page/writings_page.jsx");
-/* harmony import */ var _about_page_about__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./about_page/about */ "./components/about_page/about.jsx");
-/* harmony import */ var _sidebar_sidebar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./sidebar/sidebar */ "./components/sidebar/sidebar.jsx");
+/* harmony import */ var _writing_page_writing_page__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./writing_page/writing_page */ "./components/writing_page/writing_page.jsx");
+/* harmony import */ var _about_page_about__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./about_page/about */ "./components/about_page/about.jsx");
+/* harmony import */ var _sidebar_sidebar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./sidebar/sidebar */ "./components/sidebar/sidebar.jsx");
+
 
 
 
@@ -456,19 +458,27 @@ __webpack_require__.r(__webpack_exports__);
 var ComponentWrapper = function ComponentWrapper(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "app-wrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sidebar_sidebar__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sidebar_sidebar__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/",
+    component: _landing_page_landing_page__WEBPACK_IMPORTED_MODULE_2__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/projects",
     component: _projects_page_projects_page__WEBPACK_IMPORTED_MODULE_3__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/about",
-    component: _about_page_about__WEBPACK_IMPORTED_MODULE_5__["default"]
+    component: _about_page_about__WEBPACK_IMPORTED_MODULE_6__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    path: "/",
+    exact: true,
+    path: "/writings",
     component: _writings_page_writings_page__WEBPACK_IMPORTED_MODULE_4__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/writings/:id",
+    component: _writing_page_writing_page__WEBPACK_IMPORTED_MODULE_5__["default"]
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (ComponentWrapper); // {/* <Route exact path='/' component={LandingPage} /> */}
+/* harmony default export */ __webpack_exports__["default"] = (ComponentWrapper);
 
 /***/ }),
 
@@ -539,7 +549,7 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "animation-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-        class: "loader",
+        className: "loader",
         xmlns: "http://www.w3.org/2000/svg",
         viewBox: "0 0 340 340"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("circle", {
@@ -849,6 +859,156 @@ var Sidebar = function Sidebar() {
 
 /***/ }),
 
+/***/ "./components/writing_page/writing_item.jsx":
+/*!**************************************************!*\
+  !*** ./components/writing_page/writing_item.jsx ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_quill__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-quill */ "./node_modules/react-quill/lib/index.js");
+/* harmony import */ var react_quill__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_quill__WEBPACK_IMPORTED_MODULE_1__);
+
+ //destructure writing out of props for cleaner code
+
+var WritingItem = function WritingItem(_ref) {
+  var writing = _ref.writing;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "writing-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "specific-writing-title"
+  }, " ", writing.title, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "Iframe-Liason-Sheet",
+    className: "set-margin set-padding set-border set-box-shadow center-block-horiz"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "responsive-wrapper  responsive-wrapper-wxh-550x2000"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+    src: writing.content
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "ERROR: "), "An iframe should be displayed here but your browser version does not support iframes. "), "Please update your browser to its most recent version and try again.")))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (WritingItem);
+/*<iframe width="2000px" height="1000px" src={writing.content}></iframe>*/
+
+/***/ }),
+
+/***/ "./components/writing_page/writing_page.jsx":
+/*!**************************************************!*\
+  !*** ./components/writing_page/writing_page.jsx ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _writing_item__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./writing_item */ "./components/writing_page/writing_item.jsx");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+var WritingPage =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(WritingPage, _React$Component);
+
+  function WritingPage() {
+    _classCallCheck(this, WritingPage);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(WritingPage).apply(this, arguments));
+  }
+
+  _createClass(WritingPage, [{
+    key: "render",
+    value: function render() {
+      var writing1 = {
+        title: "Second Poem to Jane",
+        blurb: "A tale of two cities, this story explores the dichotomy of wealth and poverty.",
+        author: "Benji Rothman",
+        datePublished: "Oct 18, 2017",
+        readTime: "5 min read",
+        imageUrl: "https://cdn-images-1.medium.com/focal/152/156/51/50/1*8FGsHHpV1ckNcvj2mThRhQ.jpeg",
+        content: "https://docs.google.com/document/d/e/2PACX-1vSps2EjlZ4tEkXWEbgqW8xsPKb8b09xMPfnU3fGpkPXDZlOCh_98wsc_kIAM6R8H-tppI0TY7TIwvly/pub?embedded=true"
+      };
+      var writing2 = {
+        title: "Yom Kippur in a Buddhist Monastery",
+        blurb: "A story of two villages, this tale explores the monism of mind and matter.",
+        author: "Benji Rothman",
+        datePublished: "Sep 28",
+        readTime: "5 min read",
+        imageUrl: "https://cdn-images-1.medium.com/focal/152/156/51/50/1*8FGsHHpV1ckNcvj2mThRhQ.jpeg"
+      };
+      var writing3 = {
+        title: "Two Confused Boys",
+        blurb: "The last bit of fake data. This shall be the ignition into life we've always desired",
+        author: "Benji Rothman",
+        datePublished: "Oct 8, 2017",
+        readTime: "10 min read",
+        imageUrl: "https://cdn-images-1.medium.com/focal/152/156/51/50/1*8FGsHHpV1ckNcvj2mThRhQ.jpeg"
+      };
+      var writing4 = {
+        title: "Human Nature",
+        blurb: "The last bit of fake data. This shall be the ignition into life we've always desired",
+        author: "Benji Rothman",
+        datePublished: "Dec 13, 2017",
+        readTime: "10 min read",
+        imageUrl: "https://cdn-images-1.medium.com/focal/152/156/51/50/1*8FGsHHpV1ckNcvj2mThRhQ.jpeg"
+      };
+      var writing5 = {
+        title: "Know Thyself",
+        blurb: "The last bit of fake data. This shall be the ignition into life we've always desired",
+        author: "Benji Rothman",
+        datePublished: "May 14, 2018",
+        readTime: "10 min read",
+        imageUrl: "https://cdn-images-1.medium.com/focal/152/156/51/50/1*8FGsHHpV1ckNcvj2mThRhQ.jpeg",
+        content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true"
+      };
+      var writing6 = {
+        title: "Lost Confidence",
+        blurb: "An essay written shortly after my father died.",
+        author: "Benji Rothman",
+        datePublished: "May 14, 2018",
+        readTime: "10 min read",
+        imageUrl: "https://cdn-images-1.medium.com/focal/152/156/51/50/1*8FGsHHpV1ckNcvj2mThRhQ.jpeg",
+        content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true"
+      };
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "one-writing-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writing_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        writing: writing6
+      }));
+    }
+  }]);
+
+  return WritingPage;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (WritingPage);
+
+/***/ }),
+
 /***/ "./components/writings_page/writing_index_item.jsx":
 /*!*********************************************************!*\
   !*** ./components/writings_page/writing_index_item.jsx ***!
@@ -893,39 +1053,6 @@ var WritingIndexItem = function WritingIndexItem(_ref) {
 
 /***/ }),
 
-/***/ "./components/writings_page/writing_item.jsx":
-/*!***************************************************!*\
-  !*** ./components/writings_page/writing_item.jsx ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_quill__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-quill */ "./node_modules/react-quill/lib/index.js");
-/* harmony import */ var react_quill__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_quill__WEBPACK_IMPORTED_MODULE_1__);
-
- //destructure writing out of props for cleaner code
-
-var WritingItem = function WritingItem(_ref) {
-  var writing = _ref.writing;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "writing-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "specific-writing-title"
-  }, " ", writing.title, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
-    width: "2000px",
-    height: "1000px",
-    src: writing.content
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (WritingItem);
-
-/***/ }),
-
 /***/ "./components/writings_page/writings_page.jsx":
 /*!****************************************************!*\
   !*** ./components/writings_page/writings_page.jsx ***!
@@ -937,8 +1064,8 @@ var WritingItem = function WritingItem(_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _writing_index_item__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./writing_index_item */ "./components/writings_page/writing_index_item.jsx");
-/* harmony import */ var _writing_item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./writing_item */ "./components/writings_page/writing_item.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _writing_index_item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./writing_index_item */ "./components/writings_page/writing_index_item.jsx");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -949,13 +1076,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 
 
@@ -966,13 +1093,22 @@ var WritingsPage =
 function (_React$Component) {
   _inherits(WritingsPage, _React$Component);
 
-  function WritingsPage() {
+  function WritingsPage(props) {
+    var _this;
+
     _classCallCheck(this, WritingsPage);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(WritingsPage).apply(this, arguments));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(WritingsPage).call(this, props));
+    _this.viewWriting = _this.viewWriting.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    return _this;
   }
 
   _createClass(WritingsPage, [{
+    key: "viewWriting",
+    value: function viewWriting() {
+      this.props.history.push('/writings/1');
+    }
+  }, {
     key: "render",
     value: function render() {
       var writing1 = {
@@ -1022,8 +1158,21 @@ function (_React$Component) {
         className: "writing-header"
       }, "My Writings"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "writing-index-items-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writing_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        writing: writing1
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writing_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        writing: writing1,
+        onClick: this.viewWriting
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writing_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        writing: writing2,
+        onClick: this.viewWriting
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writing_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        writing: writing3,
+        onClick: this.viewWriting
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writing_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        writing: writing4,
+        onClick: this.viewWriting
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writing_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        writing: writing5,
+        onClick: this.viewWriting
       })));
     }
   }]);
@@ -1031,16 +1180,7 @@ function (_React$Component) {
   return WritingsPage;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (WritingsPage);
-/*
-
-<WritingIndexItem writing={writing1} />
-                    <WritingIndexItem writing={writing2} />
-                    <WritingIndexItem writing={writing3} />
-                    <WritingIndexItem writing={writing4} />
-                    <WritingIndexItem writing={writing5} />
-
-*/
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(WritingsPage));
 
 /***/ }),
 

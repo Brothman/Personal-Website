@@ -17,6 +17,13 @@ h1 {
     grid-template-columns: 300px 1fr;
 }
 
+/* Resize screen to no longer expect sidebar at smaller screen sizes */
+@media only screen and (max-width: 768px ) {
+    .app-wrapper {
+       grid-template-columns: 1fr;
+    }
+}
+
 /* circle:nth-of-type(1) {
   stroke-dasharray: 550; 
 }

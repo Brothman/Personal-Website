@@ -23,6 +23,16 @@
     align-items: center;
 }
 
+/* Make the sidebar disappear when the screen is smaller than 768px.
+    I need to add a header that appears at this point too.
+    */
+
+@media only screen and (max-width: 768px ) {
+    .sidebar {
+        display: none;
+    }
+}
+
 .name {
     grid-area: name;
     font-size: 30px;

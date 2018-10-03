@@ -1,10 +1,18 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import WritingIndexItem from './writing_index_item';
-import WritingItem from './writing_item';
 
 class WritingsPage extends React.Component {
 
-    
+    constructor(props) {
+        super(props);
+        this.viewWriting = this.viewWriting.bind(this);
+    }
+
+    viewWriting() {
+        this.props.history.push('/writings/1');
+    }
+
     render() {
         const writing1 = { 
             title: "Second Poem to Jane", 
@@ -52,23 +60,15 @@ class WritingsPage extends React.Component {
             <div className="writings-container">
                 <h1 className="writing-header">My Writings</h1>
                 <div className="writing-index-items-container">
-                    <WritingItem writing={writing1} />
-
+                    <WritingIndexItem writing={writing1} onClick={this.viewWriting} />
+                    <WritingIndexItem writing={writing2} onClick={this.viewWriting} />
+                    <WritingIndexItem writing={writing3} onClick={this.viewWriting} />
+                    <WritingIndexItem writing={writing4} onClick={this.viewWriting} />
+                    <WritingIndexItem writing={writing5} onClick={this.viewWriting} />
                 </div>
             </div>
         );
     }
 }
 
-export default WritingsPage;
-
-
-/*
-
-<WritingIndexItem writing={writing1} />
-                    <WritingIndexItem writing={writing2} />
-                    <WritingIndexItem writing={writing3} />
-                    <WritingIndexItem writing={writing4} />
-                    <WritingIndexItem writing={writing5} />
-
-*/
+export default withRouter(WritingsPage);
