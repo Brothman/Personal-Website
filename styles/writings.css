@@ -23,6 +23,7 @@
 .writing-index-items-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(auto, 680px));
+    width: 100%;
     justify-content: center;
     overflow-y: auto;
 }

@@ -10,7 +10,7 @@ class WritingsPage extends React.Component {
     }
 
     viewWriting() {
-        this.props.history.push('/writings/1');
+        this.props.history.push('/writings/5');
     }
 
     render() {

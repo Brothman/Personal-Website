@@ -1,7 +1,13 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import WritingIndexItem from '../writings_page/writing_index_item';
 
 class ProjectsPage extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.visitPersonalWebsite = this.visitPersonalWebsite.bind(this);
+    }
 
     visitMortalNote() {
         // window.location = "http://mortal-note.herokuapp.com";
@@ -24,7 +30,7 @@ class ProjectsPage extends React.Component {
     }
 
     visitPersonalWebsite() {
-        window.location = "http://benjirothman.com/";
+       this.props.history.push('/');
         // window.open("http://benjirothman.com/");
     }
 
@@ -85,7 +91,7 @@ class ProjectsPage extends React.Component {
     }
 }
 
-export default ProjectsPage;
+export default withRouter(ProjectsPage);
 
 
 

@@ -594,7 +594,8 @@ function (_React$Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _writings_page_writing_index_item__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../writings_page/writing_index_item */ "./components/writings_page/writing_index_item.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _writings_page_writing_index_item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../writings_page/writing_index_item */ "./components/writings_page/writing_index_item.jsx");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -605,13 +606,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
 
 
 
@@ -621,10 +623,14 @@ var ProjectsPage =
 function (_React$Component) {
   _inherits(ProjectsPage, _React$Component);
 
-  function ProjectsPage() {
+  function ProjectsPage(props) {
+    var _this;
+
     _classCallCheck(this, ProjectsPage);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(ProjectsPage).apply(this, arguments));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(ProjectsPage).call(this, props));
+    _this.visitPersonalWebsite = _this.visitPersonalWebsite.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    return _this;
   }
 
   _createClass(ProjectsPage, [{
@@ -654,7 +660,7 @@ function (_React$Component) {
   }, {
     key: "visitPersonalWebsite",
     value: function visitPersonalWebsite() {
-      window.location = "http://benjirothman.com/"; // window.open("http://benjirothman.com/");
+      this.props.history.push('/'); // window.open("http://benjirothman.com/");
     }
   }, {
     key: "render",
@@ -706,19 +712,19 @@ function (_React$Component) {
         onClick: this.visitMortalNote
       }, "My Projects"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "writing-index-items-container project-index-item-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writings_page_writing_index_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writings_page_writing_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
         writing: writing1,
         onClick: this.visitMortalNote
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writings_page_writing_index_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writings_page_writing_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
         writing: writing2,
         onClick: this.visitWigo
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writings_page_writing_index_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writings_page_writing_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
         writing: writing3,
         onClick: this.visitGirlOnTheLedge
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writings_page_writing_index_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writings_page_writing_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
         writing: writing4,
         onClick: this.visitPaddleBall
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writings_page_writing_index_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writings_page_writing_index_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
         writing: writing5,
         onClick: this.visitPersonalWebsite
       })));
@@ -728,7 +734,7 @@ function (_React$Component) {
   return ProjectsPage;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (ProjectsPage);
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(ProjectsPage));
 
 /***/ }),
 
@@ -792,11 +798,13 @@ var Sidebar = function Sidebar() {
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "social-icons"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    target: "_blank",
     className: "social-button",
     href: "https://github.com/Brothman/"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fab fa-github"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    target: "_blank",
     className: "social-button",
     href: "https://www.linkedin.com/in/brothman7000/"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -907,7 +915,8 @@ var WritingItem = function WritingItem(_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _writing_item__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./writing_item */ "./components/writing_page/writing_item.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _writing_item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./writing_item */ "./components/writing_page/writing_item.jsx");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -925,6 +934,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -994,10 +1004,11 @@ function (_React$Component) {
         imageUrl: "https://cdn-images-1.medium.com/focal/152/156/51/50/1*8FGsHHpV1ckNcvj2mThRhQ.jpeg",
         content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true"
       };
+      var writingArr = [writing1, writing2, writing3, writing4, writing5, writing6];
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "one-writing-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writing_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        writing: writing6
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writing_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        writing: writingArr[this.props.match.params.id]
       }));
     }
   }]);
@@ -1005,7 +1016,7 @@ function (_React$Component) {
   return WritingPage;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (WritingPage);
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(WritingPage));
 
 /***/ }),
 
@@ -1106,7 +1117,7 @@ function (_React$Component) {
   _createClass(WritingsPage, [{
     key: "viewWriting",
     value: function viewWriting() {
-      this.props.history.push('/writings/1');
+      this.props.history.push('/writings/5');
     }
   }, {
     key: "render",

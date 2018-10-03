@@ -14,10 +14,10 @@ const Sidebar = () => {
             </Link>
 
             <div className="social-icons">
-                <a className="social-button" href="https://github.com/Brothman/">
+                <a target="_blank" className="social-button" href="https://github.com/Brothman/">
                     <i className="fab fa-github"></i>
                 </a>
-                <a className="social-button" href="https://www.linkedin.com/in/brothman7000/">
+                <a target="_blank" className="social-button" href="https://www.linkedin.com/in/brothman7000/">
                     <i className="fab fa-linkedin-in"></i>
                 </a>
                 <a className="social-button" href="mailto:brothman7000@gmail.com?Subject=Hello%20from%20Portfolio%20Website">

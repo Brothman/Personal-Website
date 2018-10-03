@@ -27,11 +27,19 @@
     I need to add a header that appears at this point too.
     */
 
-@media only screen and (max-width: 768px ) {
+/* @media only screen and (max-width: 768px ) {
+    .sidebar {
+        display: none;
+    }
+} */
+
+/* Choose a size that looks better for projects and writings page */
+@media only screen and (max-width: 1008px ) {
     .sidebar {
         display: none;
     }
 }
+
 
 .name {
     grid-area: name;

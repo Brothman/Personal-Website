@@ -1,8 +1,8 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import WritingItem from './writing_item';
 
 class WritingPage extends React.Component {
-
 
     render() {
         const writing1 = {
@@ -57,12 +57,14 @@ class WritingPage extends React.Component {
             content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
         };
 
+        const writingArr = [writing1, writing2, writing3, writing4, writing5, writing6];
+
         return (
             <div className="one-writing-container">
-                <WritingItem writing={writing6} />
+                <WritingItem writing={writingArr[this.props.match.params.id]} />
             </div>
         );
     }
 }
 
-export default WritingPage;
+export default withRouter(WritingPage);

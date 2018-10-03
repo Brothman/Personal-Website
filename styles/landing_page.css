@@ -18,7 +18,13 @@ h1 {
 }
 
 /* Resize screen to no longer expect sidebar at smaller screen sizes */
-@media only screen and (max-width: 768px ) {
+/* @media only screen and (max-width: 768px ) {
+    .app-wrapper {
+       grid-template-columns: 1fr;
+    }
+} */
+
+@media only screen and (max-width: 1008px ) {
     .app-wrapper {
        grid-template-columns: 1fr;
     }
