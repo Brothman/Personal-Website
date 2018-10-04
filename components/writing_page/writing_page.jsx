@@ -44,8 +44,8 @@ class WritingPage extends React.Component {
             author: "Benji Rothman",
             datePublished: "May 14, 2018",
             readTime: "10 min read",
-            imageUrl: "https://cdn-images-1.medium.com/focal/152/156/51/50/1*8FGsHHpV1ckNcvj2mThRhQ.jpeg",
-            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Know-Thyself.jpeg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQPfJ5yDEOfhguipnBsSFl-45NjaS5jLc6jc5R8-ZiOk9i0d9GGeQH8FS6vkEKAP_lT4taccdsD3IG_/pub?embedded=true",
         };
         const writing6 = {
             title: "Lost Confidence",
@@ -53,15 +53,17 @@ class WritingPage extends React.Component {
             author: "Benji Rothman",
             datePublished: "May 14, 2018",
             readTime: "10 min read",
-            imageUrl: "https://cdn-images-1.medium.com/focal/152/156/51/50/1*8FGsHHpV1ckNcvj2mThRhQ.jpeg",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
             content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
         };
+
+        
 
         const writingArr = [writing1, writing2, writing3, writing4, writing5, writing6];
 
         return (
             <div className="one-writing-container">
-                <WritingItem writing={writingArr[this.props.match.params.id]} />
+                <WritingItem writing={writingArr[this.props.match.params.id - 1]} />
             </div>
         );
     }

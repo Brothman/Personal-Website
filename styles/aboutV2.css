@@ -1,0 +1,53 @@
+.about2-container {
+    display: grid;
+    grid-template-rows: 100vh 100vh;
+    grid-auto-rows: 500px;
+    /* overflow: auto; */
+    max-height: 100vh;
+}
+
+.about-landing-page {
+    display: grid;
+    grid-template-rows: 1fr 100px 200px 60px 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: 
+    " .       .           . "
+    " .    greeting       . "
+    " .    brief-bio      . "
+    " .    learn-more     . "
+    " .       .           . ";
+    justify-items: center;
+    align-items: center;
+}
+
+.greeting {
+    grid-area: greeting;
+    font-size: 60px;
+    margin: 0;
+}
+
+.brief-bio {
+    grid-area: brief-bio; 
+    max-width: 650px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.learn-more {
+     grid-area: learn-more;
+     background: -webkit-gradient(linear, right top, left bottom, from(#52D681), to(#1FDEDB));
+     color: rgba(255, 255, 255, 0.7);
+     border-radius: 30px;
+     letter-spacing: 2px;
+     padding: 15px 30px;
+}
+
+.greeting, .brief-bio {
+    background: -webkit-gradient(linear, right top, left bottom, from(#52D681), to(#1FDEDB));
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Gothic A1";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}

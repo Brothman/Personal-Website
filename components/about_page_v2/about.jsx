@@ -62,7 +62,7 @@ class About extends React.Component {
         window.open("https://nodejs.org/");
     }
 
-    visitAWS(){
+    visitAWS() {
         // window.location = "https://aws.amazon.com/";
         window.open("https://aws.amazon.com/");
     }
@@ -72,13 +72,37 @@ class About extends React.Component {
         window.open("https://docs.google.com/document/d/1Y8s4-hK9l1nDmYPUC24o1jXvIjKGPUpxEEAoPhoP1C0/edit?usp=sharing");
     }
 
+    //all three methods work
+    scrollDown() {
+        // const tempWrapper = document.getElementsByClassName('temporary-wrapper')[0];
+        // tempWrapper.scrollIntoView();
+        // window.scroll(0 , window.innerHeight); 
+        window.scrollTo(
+            {
+                top: window.innerHeight, 
+                behavior: "smooth"
+            });
+    }
+
+    scrollUp() {
+        window.scrollTo(
+            {
+                top: 0,
+                behavior: "smooth"
+            });
+    }
+
 
     render() {
         return (
-            <div className="about-container">
-                <h1 className="hi">Hi.</h1>
-                <span className="benji-bio">I am a full stack web developer and writer based in Brooklyn, NY. Please enjoy my creations.</span>
+            <div className="about2-container">
+                <div className="about-landing-page">
+                    <h1 className="greeting">Hi, I'm Benji! </h1>
+                    <h2 className="brief-bio">A fullstack web developer and writer based in Brooklyn, NYC. I specialize in React/Redux & Ruby on Rails. </h2>
+                    <button className="learn-more" onClick={this.scrollDown}>LEARN MORE</button>
+                </div>
 
+            <div className="temporary-wrapper">
                 <h1 className="what-i-can-do">Do you need an elegant and efficient website?</h1>
                 <div className="skill-icons">
                     <i onClick={this.visitReact} className="skill-icon devicon-react-original-wordmark colored"></i>
@@ -125,6 +149,10 @@ class About extends React.Component {
                         <i className="far fa-envelope"></i>
                     </a>
                 </div>
+
+            </div>
+
+            <button onClick={this.scrollUp}> Scroll up</button>
 
             </div>
         );

@@ -107,6 +107,8 @@
 .writing-image {
     grid-area: writing-image;
     height: 100%;
+    max-width: 210px;
+    min-width: 210px;
 }
 
 .writing-date-published, .writing-read-time, .writing-author, .writing-blurb {
