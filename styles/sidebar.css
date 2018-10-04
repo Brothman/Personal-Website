@@ -89,7 +89,7 @@
     height: 100vh;
 }
 
-.navigation-buttons, .social-icons {
+.nav-button, .social-button {
     position: relative;
     z-index: 10;
 }

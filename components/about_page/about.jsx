@@ -79,7 +79,7 @@ class About extends React.Component {
                 <h1 className="hi">Hi.</h1>
                 <span className="benji-bio">I am a full stack web developer based in Brooklyn, NY. Please enjoy my creations.</span>
 
-                <h1 className="what-i-can-do">What I can do.</h1>
+                <h1 className="what-i-can-do">Do you need an elegant and efficient website?</h1>
                 <div className="skill-icons">
                     <i onClick={this.visitReact} className="skill-icon devicon-react-original-wordmark colored"></i>
                     <i onClick={this.visitAtom} className="skill-icon devicon-atom-original-wordmark colored"></i>

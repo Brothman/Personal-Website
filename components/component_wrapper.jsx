@@ -11,6 +11,7 @@ const ComponentWrapper = (props) => {
     return (
         <div className="app-wrapper">
             <Sidebar />
+            <About />
             <Route exact path='/' component={LandingPage} /> 
             <Route path='/projects' component={ProjectsPage} />
             <Route path='/about' component={About} />

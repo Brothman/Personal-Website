@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactQuill from 'react-quill';
 
 //destructure writing out of props for cleaner code
 const WritingItem = ({ writing }) => {
