@@ -65,6 +65,168 @@ class WritingsPage extends React.Component {
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
             content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
         };
+        const writing7 = {
+            title: "An Apology to Marijuana",
+            blurb: "An early attempt to accept responsibility for my life and my addictions.",
+            author: "Benji Rothman",
+            datePublished: "Jul 24, 2015",
+            readTime: "4 min read",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/marijuana4.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vSVnugR2TSUW0rUqvyZKj8JFMqxUDhXVSoK6xJShux3rFhFRDWB6fUP0Hkl2FJ5TcmtwmeBy_so_lqM/pub?embedded=true",
+        };
+        const writing8 = {
+            title: "A Reunion",
+            blurb: "An essay written shortly after my father died.",
+            author: "Benji Rothman",
+            datePublished: "Dec 27, 2016",
+            readTime: "2 min read",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+        };
+        const writing9 = {
+            title: "Adventure",
+            blurb: "An essay written shortly after my father died.",
+            author: "Benji Rothman",
+            datePublished: "Jul 25, 2015",
+            readTime: "10 min read",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+        };
+        const writing10 = {
+            title: "My Perfect Day",
+            blurb: "An essay written shortly after my father died.",
+            author: "Benji Rothman",
+            datePublished: "May 14, 2018",
+            readTime: "10 min read",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+        };
+        const writing11 = {
+            title: "Anxiety",
+            blurb: "An essay written shortly after my father died.",
+            author: "Benji Rothman",
+            datePublished: "Jul 26, 2018",
+            readTime: "10 min read",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+        };
+        const writing12 = {
+            title: "Thoughts on a Summer Day",
+            blurb: "An essay written shortly after my father died.",
+            author: "Benji Rothman",
+            datePublished: "Jul 6, 2015",
+            readTime: "10 min read",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+        };
+        const writing13 = {
+            title: "Lunch",
+            blurb: "An essay written shortly after my father died.",
+            author: "Benji Rothman",
+            datePublished: "Jul 7, 2015",
+            readTime: "10 min read",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+        };
+        const writing14 = {
+            title: "Yellow Cat",
+            blurb: "An essay written shortly after my father died.",
+            author: "Benji Rothman",
+            datePublished: "Jul 8, 2015",
+            readTime: "10 min read",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+        };
+        const writing14 = {
+            title: "You Want Food?",
+            blurb: "An essay written shortly after my father died.",
+            author: "Benji Rothman",
+            datePublished: "Jul 9, 2015",
+            readTime: "10 min read",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+        };
+        const writing14 = {
+            title: "Why Take College Courses?",
+            blurb: "An essay written shortly after my father died.",
+            author: "Benji Rothman",
+            datePublished: "Jul 12, 2015",
+            readTime: "10 min read",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+        };
+        const writing14 = {
+            title: "No Judgement",
+            blurb: "Six haikus to describe reality without judgement.",
+            author: "Benji Rothman",
+            datePublished: "Jul 13, 2015",
+            readTime: "10 min read",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+        };
+        const writing14 = {
+            title: "Forever Empty",
+            blurb: "An essay written shortly after my father died.",
+            author: "Benji Rothman",
+            datePublished: "Jul 20, 2015",
+            readTime: "10 min read",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+        };
+        const writing14 = {
+            title: "Distractions",
+            blurb: "An essay written shortly after my father died.",
+            author: "Benji Rothman",
+            datePublished: "Jul 22, 2015",
+            readTime: "10 min read",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+        };
+        const writing14 = {
+            title: "The Future",
+            blurb: "An essay written shortly after my father died.",
+            author: "Benji Rothman",
+            datePublished: "Jul 23, 2015",
+            readTime: "10 min read",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+        };
+        const writing14 = {
+            title: "Strength",
+            blurb: "The inspiration for my story: An Apology to Marijuana.",
+            author: "Benji Rothman",
+            datePublished: "Jul 24, 2015",
+            readTime: "10 min read",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+        };
+        const writing14 = {
+            title: "Book Review: A Pale View of Hills",
+            blurb: "The inspiration for my story: An Apology to Marijuana.",
+            author: "Benji Rothman",
+            datePublished: "Jul 24, 2015",
+            readTime: "10 min read",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+        };
+        const writing15 = {
+            title: "A Disconnect",
+            blurb: "An essay written shortly after my father died.",
+            author: "Benji Rothman",
+            datePublished: "Dec 25, 2016",
+            readTime: "10 min read",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+        };
+        const writing16 = {
+            title: "University, the Home of the Challenging Idea...Or So I Thought",
+            blurb: "An essay written shortly after my father died.",
+            author: "Benji Rothman",
+            datePublished: "Mar 2, 2018",
+            readTime: "10 min read",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+        };
 
         const writingArr = [writing1, writing2, writing3, writing4, writing5, writing6];
 
