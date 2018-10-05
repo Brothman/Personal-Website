@@ -102,7 +102,7 @@ class About extends React.Component {
                     <button className="learn-more" onClick={this.scrollDown}>LEARN MORE</button>
                 </div>
 
-            <div className="temporary-wrapper">
+            <div className="myPitch-wrapper">
                 <h1 className="what-i-can-do">Do you need an elegant and efficient website?</h1>
                 <div className="skill-icons">
                     <i onClick={this.visitReact} className="skill-icon devicon-react-original-wordmark colored"></i>
@@ -152,7 +152,10 @@ class About extends React.Component {
 
             </div>
 
-            <button onClick={this.scrollUp}> Scroll up</button>
+                <div className="scroll-up" onClick={this.scrollUp} style={{visibility: "hidden", opacity: 0}}>
+                    <i className="fas fa-arrow-up" ></i>
+                </div>
+      
 
             </div>
         );
