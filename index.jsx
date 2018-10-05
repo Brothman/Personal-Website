@@ -7,12 +7,12 @@ window.disappearing = false;
 document.addEventListener("scroll", () => {
     const scrollUp = document.getElementsByClassName('scroll-up')[0];
 
-    if (window.pageYOffset >= window.innerHeight) {
+    if (window.pageYOffset >= window.innerHeight && !window.disappearing) {
         scrollUp.style.visibility = "visible";
         scrollUp.style.opacity = 1;
     }
     else {
-        if (scrollUp.style.visibility = "visible" && !window.disappearing) {
+        if (scrollUp.style.visibility == "visible" && !window.disappearing) {
             window.disappearing = true;
             scrollUp.style.opacity = 0;
 

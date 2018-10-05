@@ -12,7 +12,6 @@ const ComponentWrapper = (props) => {
         <div className="app-wrapper">
             <Sidebar />
             <div className="hidden" />
-            <AboutV2/>
             <Route exact path='/' component={LandingPage} /> 
             <Route path='/projects' component={ProjectsPage} />
             <Route path='/about' component={AboutV2} />

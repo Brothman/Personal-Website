@@ -494,7 +494,7 @@ var ComponentWrapper = function ComponentWrapper(props) {
     className: "app-wrapper"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sidebar_sidebar__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "hidden"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_about_page_v2_about__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/",
     component: _landing_page_landing_page__WEBPACK_IMPORTED_MODULE_2__["default"]
@@ -1263,11 +1263,11 @@ window.disappearing = false;
 document.addEventListener("scroll", function () {
   var scrollUp = document.getElementsByClassName('scroll-up')[0];
 
-  if (window.pageYOffset >= window.innerHeight) {
+  if (window.pageYOffset >= window.innerHeight && !window.disappearing) {
     scrollUp.style.visibility = "visible";
     scrollUp.style.opacity = 1;
   } else {
-    if (scrollUp.style.visibility = "visible" && !window.disappearing) {
+    if (scrollUp.style.visibility == "visible" && !window.disappearing) {
       window.disappearing = true;
       scrollUp.style.opacity = 0;
       setTimeout(function () {
