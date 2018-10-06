@@ -76,12 +76,12 @@ class WritingsPage extends React.Component {
         };
         const writing8 = {
             title: "A Reunion",
-            blurb: "An essay written shortly after my father died.",
+            blurb: "A short poem about the difficulties in reconnecting with an old friend.",
             author: "Benji Rothman",
             datePublished: "Dec 27, 2016",
             readTime: "2 min read",
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
-            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+            content: "https://docs.google.com/document/d/e/2PACX-1vRL4erU3mg5573byMRGttZyVp6SZ55FCvFVQIc7D4HtmCyXrMvU7xbfD6flb4RhWUf9bn_uoZ2r1ogS/pub?embedded=true",
         };
         const writing9 = {
             title: "Adventure",
@@ -125,7 +125,7 @@ class WritingsPage extends React.Component {
             author: "Benji Rothman",
             datePublished: "Jul 7, 2015",
             readTime: "10 min read",
-            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Caleb+and+Ben.JPG",
             content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
         };
         const writing14 = {
