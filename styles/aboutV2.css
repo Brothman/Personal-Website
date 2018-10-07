@@ -78,7 +78,7 @@
     position: fixed;
     bottom: 25px;
     right: 25px;
-    transition: opacity 1s ease;
+    transition: opacity 0.8s ease;
     cursor: pointer;
 
     width: 50px;
