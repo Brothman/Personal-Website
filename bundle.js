@@ -1330,7 +1330,9 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(WritingsPage).call(this, props));
     _this.state = {
-      writingIndexItemArr: []
+      writingArr: [],
+      timeSortedDescending: true,
+      dateSortedDescending: true
     };
     _this.viewWriting = _this.viewWriting.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     _this.filterByDate = _this.filterByDate.bind(_assertThisInitialized(_assertThisInitialized(_this)));
@@ -1636,21 +1638,41 @@ function (_React$Component) {
   }, {
     key: "filterByDate",
     value: function filterByDate() {
-      var sortedArr = this.state.writingArr.sort(function (a, b) {
-        return a.intDate - b.intDate;
-      });
+      var sortedArr;
+
+      if (this.state.dateSortedDescending) {
+        sortedArr = this.state.writingArr.sort(function (a, b) {
+          return a.intDate - b.intDate;
+        });
+      } else {
+        sortedArr = this.state.writingArr.sort(function (a, b) {
+          return b.intDate - a.intDate;
+        });
+      }
+
       this.setState({
-        writingArr: sortedArr
+        writingArr: sortedArr,
+        dateSortedDescending: !this.state.dateSortedDescending
       });
     }
   }, {
     key: "filterByTimeToRead",
     value: function filterByTimeToRead() {
-      var sortedArr = this.state.writingArr.sort(function (a, b) {
-        return a.intTime - b.intTime;
-      });
+      var sortedArr;
+
+      if (this.state.timeSortedDescending) {
+        sortedArr = this.state.writingArr.sort(function (a, b) {
+          return a.intTime - b.intTime;
+        });
+      } else {
+        sortedArr = this.state.writingArr.sort(function (a, b) {
+          return b.intTime - a.intTime;
+        });
+      }
+
       this.setState({
-        writingArr: sortedArr
+        writingArr: sortedArr,
+        timeSortedDescending: !this.state.timeSortedDescending
       });
     }
   }, {
@@ -1677,7 +1699,10 @@ function (_React$Component) {
       }, "My Writings"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "sort-by-date",
         onClick: this.filterByDate
-      }, "Sort By Date"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Sort By Date"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "sort-by-time-to-read",
+        onClick: this.filterByTimeToRead
+      }, "Sort By Time To Read"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "writing-index-items-container"
       }, writingIndexItemArr));
     }

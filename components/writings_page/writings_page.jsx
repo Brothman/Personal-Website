@@ -8,7 +8,9 @@ class WritingsPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            writingIndexItemArr: [],
+            writingArr: [],
+            timeSortedDescending: true,
+            dateSortedDescending: true,
         };
         this.viewWriting = this.viewWriting.bind(this);
         this.filterByDate = this.filterByDate.bind(this);
@@ -338,22 +340,43 @@ class WritingsPage extends React.Component {
     }
 
     filterByDate() {
-        const sortedArr = this.state.writingArr.sort((a, b) => {
-            return a.intDate - b.intDate;
-        });
+
+        let sortedArr;
+
+        if (this.state.dateSortedDescending) {
+            sortedArr = this.state.writingArr.sort((a, b) => {
+                return a.intDate - b.intDate;
+            });
+        }
+        else {
+            sortedArr = this.state.writingArr.sort((a, b) => {
+                return b.intDate - a.intDate;
+            });
+        }
 
         this.setState({
-            writingArr: sortedArr
+            writingArr: sortedArr,
+            dateSortedDescending: !this.state.dateSortedDescending
         });
     }
 
     filterByTimeToRead() {
-        const sortedArr = this.state.writingArr.sort((a, b) => {
-            return a.intTime - b.intTime;
-        });
+        let sortedArr; 
+
+        if (this.state.timeSortedDescending) {
+            sortedArr = this.state.writingArr.sort((a, b) => {
+                return a.intTime - b.intTime;
+            });
+        }
+        else {
+            sortedArr = this.state.writingArr.sort((a, b) => {
+                return b.intTime - a.intTime;
+            });
+        }
 
         this.setState({
-            writingArr: sortedArr
+            writingArr: sortedArr,
+            timeSortedDescending: !this.state.timeSortedDescending
         });
     }
 
@@ -371,6 +394,7 @@ class WritingsPage extends React.Component {
             <div className="writings-container">
                 <h1 className="writing-header">My Writings</h1>
                 <button className="sort-by-date" onClick={this.filterByDate}>Sort By Date</button>
+                <button className="sort-by-time-to-read" onClick={this.filterByTimeToRead}>Sort By Time To Read</button>
                 <div className="writing-index-items-container">
                   {writingIndexItemArr}
                 </div>
