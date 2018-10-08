@@ -3,20 +3,21 @@ import { withRouter } from 'react-router-dom';
 import WritingIndexItem from './writing_index_item';
 
 class WritingsPage extends React.Component {
+    
 
     constructor(props) {
         super(props);
+        this.state = {
+            writingIndexItemArr: [],
+        };
         this.viewWriting = this.viewWriting.bind(this);
+        this.filterByDate = this.filterByDate.bind(this);
+        this.filterByTimeToRead = this.filterByTimeToRead.bind(this);
     }
 
-    viewWriting(id) {
-        this.props.history.push(`/writings/${id}`);
-    }
-
-    render() {
-
-            //date.getTime() gives the unix timecode stamp
-            //0 for month represents january
+    componentDidMount() {
+        //date.getTime() gives the unix timecode stamp
+        //0 for month represents january
         const writing24 = {
             id: 24,
             title: "Lost Confidence",
@@ -266,7 +267,7 @@ class WritingsPage extends React.Component {
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Easter-Bunny-Food.jpg",
             content: "https://docs.google.com/document/d/e/2PACX-1vQQ6uN3L8LRn2UDJgg54eMXuLj7YdsLmqX4_MpWyA0ynhVgAEpsB9FQ43wlo13Ee71p28T7_milnkNz/pub?embedded=true",
         };
-        const writing3= {
+        const writing3 = {
             id: 3,
             title: "Yellow Cat",
             blurb: "A short story about roaring at a cat.",
@@ -304,7 +305,7 @@ class WritingsPage extends React.Component {
         };
 
         const writingArr = [
-           
+
             writing24,
             writing23,
             writing22,
@@ -331,25 +332,45 @@ class WritingsPage extends React.Component {
             writing1,
         ];
 
-        const writingIndexItemArr = writingArr.map((writing) => {
-            return <WritingIndexItem key={writing.id} writing={writing} onClick={this.viewWriting.bind(this, writing.id)} />
+        this.setState({
+            writingArr: writingArr
+        });
+    }
+
+    filterByDate() {
+        const sortedArr = this.state.writingArr.sort((a, b) => {
+            return a.intDate - b.intDate;
         });
 
-        const filterByDate = () => {
-            writingArr.sort((a, b) => {
-                return a.intDate - b.intDate;
-            });
-        }
+        this.setState({
+            writingArr: sortedArr
+        });
+    }
 
-        const filterByTimeToRead = () => {
-            writingArr.sort((a, b) => {
-                return a.intTime - b.intTime;
-            });
-        }
+    filterByTimeToRead() {
+        const sortedArr = this.state.writingArr.sort((a, b) => {
+            return a.intTime - b.intTime;
+        });
+
+        this.setState({
+            writingArr: sortedArr
+        });
+    }
+
+    viewWriting(id) {
+        this.props.history.push(`/writings/${id}`);
+    }
+
+    render() {
+
+        const writingIndexItemArr = this.state.writingArr.map((writing) => {
+            return <WritingIndexItem key={writing.id} writing={writing} onClick={this.viewWriting.bind(this, writing.id)} />
+        });
         
         return (
             <div className="writings-container">
                 <h1 className="writing-header">My Writings</h1>
+                <button className="sort-by-date" onClick={this.filterByDate}>Sort By Date</button>
                 <div className="writing-index-items-container">
                   {writingIndexItemArr}
                 </div>
