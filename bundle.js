@@ -480,6 +480,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _writing_page_writing_page__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./writing_page/writing_page */ "./components/writing_page/writing_page.jsx");
 /* harmony import */ var _about_page_v2_about__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./about_page_v2/about */ "./components/about_page_v2/about.jsx");
 /* harmony import */ var _sidebar_sidebar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./sidebar/sidebar */ "./components/sidebar/sidebar.jsx");
+/* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-particles-js */ "./node_modules/react-particles-js/lib/particles.js");
+/* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_particles_js__WEBPACK_IMPORTED_MODULE_8__);
+var _this = undefined;
+
+
 
 
 
@@ -490,11 +495,42 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ComponentWrapper = function ComponentWrapper(props) {
+  var visitHome = function visitHome() {
+    props.history.push('/');
+  };
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "app-wrapper"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sidebar_sidebar__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "hidden"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "header-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "header-name",
+    onClick: visitHome.bind(_this)
+  }, "Benji Rothman"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "nav-square fas fa-bars"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_particles_js__WEBPACK_IMPORTED_MODULE_8___default.a, {
+    className: "particles-wrapper-header",
+    params: {
+      "particles": {
+        "number": {
+          "value": 30
+        },
+        "size": {
+          "value": 3
+        }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "repulse"
+          }
+        }
+      }
+    }
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/",
     component: _landing_page_landing_page__WEBPACK_IMPORTED_MODULE_2__["default"]
@@ -514,7 +550,7 @@ var ComponentWrapper = function ComponentWrapper(props) {
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (ComponentWrapper);
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(ComponentWrapper));
 
 /***/ }),
 
@@ -740,10 +776,17 @@ function (_React$Component) {
         datePublished: "Oct 3, 2018",
         readTime: "V1.0",
         imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/Larger_Color_Corrected.jpg"
-      };
+      }; //only add a fillerDiv element if the screen is smaller than 1008 pixels and we've resized to add a header element
+
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "projects-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "filler-div-header",
+        style: {
+          minHeight: "90px",
+          width: "100%"
+        }
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "writing-header project-header",
         onClick: this.visitMortalNote
       }, "My Projects"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1226,7 +1269,13 @@ function (_React$Component) {
       var writingArr = [writing1, writing2, writing3, writing4, writing5, writing6, writing7, writing8, writing9, writing10, writing11, writing12, writing13, writing14, writing15, writing16, writing17, writing18, writing19, writing20, writing21, writing22, writing23, writing24];
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "one-writing-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writing_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "filler-div-header",
+        style: {
+          minHeight: "90px",
+          width: "100%"
+        }
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_writing_item__WEBPACK_IMPORTED_MODULE_2__["default"], {
         writing: writingArr[this.props.match.params.id - 1]
       }));
     }
@@ -1331,7 +1380,7 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(WritingsPage).call(this, props));
     _this.state = {
       writingArr: [],
-      timeSortedDescending: true,
+      timeSortedDescending: false,
       dateSortedDescending: true,
       timeSortedActive: false,
       dateSortedActive: true
@@ -1656,7 +1705,7 @@ function (_React$Component) {
       this.setState({
         writingArr: sortedArr,
         dateSortedDescending: !this.state.dateSortedDescending,
-        timeSortedDescending: true,
+        timeSortedDescending: false,
         dateSortedActive: true,
         timeSortedActive: false
       });
@@ -1679,7 +1728,7 @@ function (_React$Component) {
 
       this.setState({
         writingArr: sortedArr,
-        dateSortedDescending: true,
+        dateSortedDescending: false,
         timeSortedDescending: !this.state.timeSortedDescending,
         dateSortedActive: false,
         timeSortedActive: true
@@ -1712,10 +1761,17 @@ function (_React$Component) {
         });
       });
       var timeArrow = this.generateArrow(this.state.timeSortedDescending);
-      var dateArrow = this.generateArrow(this.state.dateSortedDescending);
+      var dateArrow = this.generateArrow(this.state.dateSortedDescending); //remember that writing header is no longer centered -- need to fix this
+
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "writings-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "filler-div-header",
+        style: {
+          minHeight: "90px",
+          width: "100%"
+        }
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "writing-header"
       }, "My Writings", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "sort-by-date",
@@ -1761,9 +1817,9 @@ window.disappearing = false; //consider adding this event listener to componentD
 //And removing it with componentWillUnmount from AboutV2 Component
 
 document.addEventListener("scroll", function () {
-  var scrollUp = document.getElementsByClassName('scroll-up')[0];
+  var scrollUp = document.getElementsByClassName('scroll-up')[0]; //the -90 handles the header appearing
 
-  if (window.pageYOffset >= window.innerHeight && !window.disappearing) {
+  if (window.pageYOffset >= window.innerHeight - 90 && !window.disappearing) {
     scrollUp.style.visibility = "visible";
     scrollUp.style.opacity = 1;
   } else {

@@ -9,7 +9,7 @@ class WritingsPage extends React.Component {
         super(props);
         this.state = {
             writingArr: [],
-            timeSortedDescending: true,
+            timeSortedDescending: false,
             dateSortedDescending: true,
             timeSortedActive: false,
             dateSortedActive: true
@@ -360,7 +360,7 @@ class WritingsPage extends React.Component {
         this.setState({
             writingArr: sortedArr,
             dateSortedDescending: !this.state.dateSortedDescending,
-            timeSortedDescending: true,
+            timeSortedDescending: false,
             dateSortedActive: true,
             timeSortedActive: false
         });
@@ -383,7 +383,7 @@ class WritingsPage extends React.Component {
         //ensure dateSort has default data, and change timeSort data in state to render changes to users
         this.setState({
             writingArr: sortedArr,
-            dateSortedDescending: true,
+            dateSortedDescending: false,
             timeSortedDescending: !this.state.timeSortedDescending,
             dateSortedActive: false,
             timeSortedActive: true
@@ -407,8 +407,11 @@ class WritingsPage extends React.Component {
         const timeArrow = this.generateArrow(this.state.timeSortedDescending);
         const dateArrow = this.generateArrow(this.state.dateSortedDescending);
         
+        //remember that writing header is no longer centered -- need to fix this
         return (
             <div className="writings-container">
+                <div className="filler-div-header" style={{ minHeight: "90px", width: "100%" }} />
+
                 <h1 className="writing-header">
                      My Writings
 
@@ -423,9 +426,6 @@ class WritingsPage extends React.Component {
                     </span>
 
                 </h1>
-
-
-
 
                 <div className="writing-index-items-container">
                   {writingIndexItemArr}

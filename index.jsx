@@ -9,7 +9,8 @@ window.disappearing = false;
 document.addEventListener("scroll", () => {
     const scrollUp = document.getElementsByClassName('scroll-up')[0];
 
-    if (window.pageYOffset >= window.innerHeight && !window.disappearing) {
+    //the -90 handles the header appearing
+    if (window.pageYOffset >= window.innerHeight - 90 && !window.disappearing) {
         scrollUp.style.visibility = "visible";
         scrollUp.style.opacity = 1;
     }

@@ -272,6 +272,7 @@ class WritingPage extends React.Component {
 
         return (
             <div className="one-writing-container">
+                <div className="filler-div-header" style={{ minHeight: "90px", width: "100%" }} />
                 <WritingItem writing={writingArr[this.props.match.params.id - 1]} />
             </div>
         );

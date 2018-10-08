@@ -6,6 +6,13 @@
     max-height: 100vh;
 }
 
+/* This handles the fixed position header appearing */
+@media only screen and (max-width: 1008px) {
+    .about2-container {
+        grid-template-rows: 100vh calc(100vh - 90px);
+    }
+}
+
 .about-landing-page {
     display: grid;
     grid-template-rows: 1fr 100px 200px 60px 1fr;
@@ -42,7 +49,7 @@
      padding: 15px 30px;
      border: 0;
      cursor: pointer;
-     transition: box-shadow 0.5s ease, color 0.5s ease;
+     transition: box-shadow 0.4s ease, color 0.4s ease;
 }
 
 .learn-more:hover {
@@ -57,6 +64,7 @@
 
 .greeting, .brief-bio {
     background: -webkit-gradient(linear, right top, left bottom, from(#52D681), to(#1FDEDB));
+    /* background: -webkit-gradient(linear, right top, left bottom, from(rgb(13, 219, 85)), to(rgb(79, 223, 220))); */
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -9,6 +9,7 @@
     "connect": "^3.6.6",
     "express": "^4.16.3",
     "lodash": "^4.17.11",
+    "opn": "^5.4.0",
     "particles.js": "^2.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",

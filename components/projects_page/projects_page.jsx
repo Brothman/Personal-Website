@@ -76,8 +76,12 @@ class ProjectsPage extends React.Component {
             readTime: "V1.0",
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/Larger_Color_Corrected.jpg"
         };
+
+        //only add a fillerDiv element if the screen is smaller than 1008 pixels and we've resized to add a header element
+
         return (
             <div className="projects-container">
+                <div className="filler-div-header" style={{ minHeight: "90px", width: "100%" }} />
                 <h1 className="writing-header project-header" onClick={this.visitMortalNote}>My Projects</h1>
                 <div className="writing-index-items-container project-index-item-container" >
                     <WritingIndexItem writing={writing1} onClick={this.visitMortalNote} />
