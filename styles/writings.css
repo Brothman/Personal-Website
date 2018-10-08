@@ -38,7 +38,8 @@
     font-family: "Gothic A1";
 }
 
-@media only screen and (min-width: 1660px ) {
+/* used to be 1660 */
+@media only screen and (min-width: 1675px ) {
     .writing-header {
         min-width: 1360px;
     }
@@ -133,4 +134,23 @@
         /* border-top: 2px solid black;
         padding-top: 15px; */
     }   
+}
+
+.right-offset {
+    position: relative;
+    left: 2px;
+    top: 1px;
+}
+
+.sort-by-date, .sort-by-time-to-read {
+    position: relative;
+    right: 20px;
+    margin-left: 10px;
+    float: right;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.sort-by-date:hover, .sort-by-time-to-read:hover {
+    opacity: 0.5;
 }

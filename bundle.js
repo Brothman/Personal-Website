@@ -1650,11 +1650,13 @@ function (_React$Component) {
         sortedArr = this.state.writingArr.sort(function (a, b) {
           return b.intDate - a.intDate;
         });
-      }
+      } //ensure timeSort has default data, and change dateSort data in state to render changes to users
+
 
       this.setState({
         writingArr: sortedArr,
         dateSortedDescending: !this.state.dateSortedDescending,
+        timeSortedDescending: true,
         dateSortedActive: true,
         timeSortedActive: false
       });
@@ -1672,10 +1674,12 @@ function (_React$Component) {
         sortedArr = this.state.writingArr.sort(function (a, b) {
           return b.intTime - a.intTime;
         });
-      }
+      } //ensure dateSort has default data, and change timeSort data in state to render changes to users
+
 
       this.setState({
         writingArr: sortedArr,
+        dateSortedDescending: true,
         timeSortedDescending: !this.state.timeSortedDescending,
         dateSortedActive: false,
         timeSortedActive: true
@@ -1690,10 +1694,10 @@ function (_React$Component) {
     key: "generateArrow",
     value: function generateArrow(shouldPointUp) {
       return shouldPointUp ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "fas fa-long-arrow-alt-down"
+        className: "right-offset fas fa-long-arrow-alt-down"
       }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "fas fa-long-arrow-alt-up"
-      }); // return <span className="fas fa-long-arrow-alt-down" />
+        className: "right-offset fas fa-long-arrow-alt-up"
+      });
     }
   }, {
     key: "render",
@@ -1713,23 +1717,17 @@ function (_React$Component) {
         className: "writings-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "writing-header"
-      }, "My Writings"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "sort-by-date",
-        onClick: this.filterByDate
-      }, "Sort By Date"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "sort-by-time-to-read",
-        onClick: this.filterByTimeToRead
-      }, "Sort By Time To Read"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "sort-by-time-to-read1",
-        onClick: this.filterByTimeToRead
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "fas fa-clock"
-      }), this.state.timeSortedActive ? timeArrow : null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "My Writings", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "sort-by-date",
         onClick: this.filterByDate
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "fas fa-calendar-alt"
-      }), this.state.dateSortedActive ? dateArrow : null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }), this.state.dateSortedActive ? dateArrow : null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "sort-by-time-to-read",
+        onClick: this.filterByTimeToRead
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "fas fa-clock"
+      }), this.state.timeSortedActive ? timeArrow : null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "writing-index-items-container"
       }, writingIndexItemArr));
     }
