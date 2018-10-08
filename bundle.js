@@ -499,6 +499,14 @@ var ComponentWrapper = function ComponentWrapper(props) {
     props.history.push('/');
   };
 
+  var expandHeader = function expandHeader() {
+    var headerContainer = document.querySelector('.header-container');
+    headerContainer.style.height = '275px';
+    headerContainer.style.maxHeight = '275px';
+    var headerParticles = document.querySelector('.particles-wrapper-header');
+    headerParticles.style.height = '275px';
+  };
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "app-wrapper"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sidebar_sidebar__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -509,8 +517,35 @@ var ComponentWrapper = function ComponentWrapper(props) {
     className: "header-name",
     onClick: visitHome.bind(_this)
   }, "Benji Rothman"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "nav-square fas fa-bars"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_particles_js__WEBPACK_IMPORTED_MODULE_8___default.a, {
+    className: "nav-square fas fa-bars",
+    onClick: expandHeader
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "navigation-buttons"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+    activeStyle: {
+      opacity: 1
+    },
+    className: "header-nav-button nav-button",
+    to: "/about"
+  }, "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+    activeStyle: {
+      opacity: 1
+    },
+    className: "header-nav-button nav-button",
+    to: "/projects"
+  }, "Projects"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+    activeStyle: {
+      opacity: 1
+    },
+    className: "header-nav-button nav-button",
+    to: "/writings"
+  }, "Writings"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+    activeStyle: {
+      opacity: 1
+    },
+    className: "header-nav-button nav-button",
+    to: "/enigma"
+  }, "Enigma")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_particles_js__WEBPACK_IMPORTED_MODULE_8___default.a, {
     className: "particles-wrapper-header",
     params: {
       "particles": {

@@ -24,48 +24,10 @@ h1 {
     }
 } */
 
-.nav-square {
-  position: fixed; 
-  z-index: 10;
-  top: 25px;
-  right: 25px;
-  font-size: 36px;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-  opacity: 0.5;
-}
-
-.header-name {
-  position: fixed; 
-  z-index: 10;
-  left: 25px;
-  font-size: 36px;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-  opacity: 0.5;
-  font-family: 'Carrois Gothic', sans-serif;
-}
-
-.header-container {
-  background-color: black;
-  color: white;
-  min-height: 90px;
-  display: none;
-  position: fixed;
-  min-width: 100%;
-}
-
-.nav-square:hover, .header-name:hover {
-  opacity: 1;
-}
 
 @media only screen and (max-width: 1008px ) {
     .app-wrapper {
        grid-template-columns: 1fr;
-    }
-
-    .header-container {
-      display: block;
     }
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, withRouter } from 'react-router-dom';
+import { Route, withRouter, NavLink } from 'react-router-dom';
 import LandingPage from './landing_page/landing_page';
 import ProjectsPage from './projects_page/projects_page';
 import WritingsPage from './writings_page/writings_page';
@@ -14,13 +14,30 @@ const ComponentWrapper = (props) => {
         props.history.push('/');
     }
 
+    const expandHeader = () => {
+        const headerContainer = document.querySelector('.header-container');
+        headerContainer.style.height = '275px';
+        headerContainer.style.maxHeight = '275px';
+
+        const headerParticles = document.querySelector('.particles-wrapper-header');
+        headerParticles.style.height = '275px';
+    }
+
     return (
         <div className="app-wrapper">
             <Sidebar />
             <div className="hidden" />
             <div className="header-container">
                 <h1 className="header-name" onClick={visitHome.bind(this)}>Benji Rothman</h1>
-                <i className="nav-square fas fa-bars" />
+                <i className="nav-square fas fa-bars" onClick={expandHeader}/>
+
+                <div className="navigation-buttons">
+                    <NavLink activeStyle={{ opacity: 1 }} className="header-nav-button nav-button" to="/about">About</NavLink>
+                    <NavLink activeStyle={{ opacity: 1 }} className="header-nav-button nav-button" to="/projects">Projects</NavLink>
+                    <NavLink activeStyle={{ opacity: 1 }} className="header-nav-button nav-button" to="/writings">Writings</NavLink>
+                    <NavLink activeStyle={{ opacity: 1 }} className="header-nav-button nav-button" to="/enigma">Enigma</NavLink>
+                </div>
+
                 <Particles className="particles-wrapper-header"
                     params={{
                         "particles": {
