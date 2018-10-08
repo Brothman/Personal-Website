@@ -1332,7 +1332,9 @@ function (_React$Component) {
     _this.state = {
       writingArr: [],
       timeSortedDescending: true,
-      dateSortedDescending: true
+      dateSortedDescending: true,
+      timeSortedActive: false,
+      dateSortedActive: true
     };
     _this.viewWriting = _this.viewWriting.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     _this.filterByDate = _this.filterByDate.bind(_assertThisInitialized(_assertThisInitialized(_this)));
@@ -1652,7 +1654,9 @@ function (_React$Component) {
 
       this.setState({
         writingArr: sortedArr,
-        dateSortedDescending: !this.state.dateSortedDescending
+        dateSortedDescending: !this.state.dateSortedDescending,
+        dateSortedActive: true,
+        timeSortedActive: false
       });
     }
   }, {
@@ -1672,13 +1676,24 @@ function (_React$Component) {
 
       this.setState({
         writingArr: sortedArr,
-        timeSortedDescending: !this.state.timeSortedDescending
+        timeSortedDescending: !this.state.timeSortedDescending,
+        dateSortedActive: false,
+        timeSortedActive: true
       });
     }
   }, {
     key: "viewWriting",
     value: function viewWriting(id) {
       this.props.history.push("/writings/".concat(id));
+    }
+  }, {
+    key: "generateArrow",
+    value: function generateArrow(shouldPointUp) {
+      return shouldPointUp ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "fas fa-long-arrow-alt-down"
+      }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "fas fa-long-arrow-alt-up"
+      }); // return <span className="fas fa-long-arrow-alt-down" />
     }
   }, {
     key: "render",
@@ -1692,6 +1707,8 @@ function (_React$Component) {
           onClick: _this2.viewWriting.bind(_this2, writing.id)
         });
       });
+      var timeArrow = this.generateArrow(this.state.timeSortedDescending);
+      var dateArrow = this.generateArrow(this.state.dateSortedDescending);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "writings-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
@@ -1703,6 +1720,16 @@ function (_React$Component) {
         className: "sort-by-time-to-read",
         onClick: this.filterByTimeToRead
       }, "Sort By Time To Read"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "sort-by-time-to-read1",
+        onClick: this.filterByTimeToRead
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "fas fa-clock"
+      }), this.state.timeSortedActive ? timeArrow : null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "sort-by-date",
+        onClick: this.filterByDate
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "fas fa-calendar-alt"
+      }), this.state.dateSortedActive ? dateArrow : null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "writing-index-items-container"
       }, writingIndexItemArr));
     }
@@ -1732,7 +1759,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-window.disappearing = false;
+window.disappearing = false; //consider adding this event listener to componentDidMount
+//And removing it with componentWillUnmount from AboutV2 Component
+
 document.addEventListener("scroll", function () {
   var scrollUp = document.getElementsByClassName('scroll-up')[0];
 

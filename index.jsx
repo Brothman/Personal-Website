@@ -4,6 +4,8 @@ import Root from './components/root';
 
 window.disappearing = false;
 
+//consider adding this event listener to componentDidMount
+//And removing it with componentWillUnmount from AboutV2 Component
 document.addEventListener("scroll", () => {
     const scrollUp = document.getElementsByClassName('scroll-up')[0];
 

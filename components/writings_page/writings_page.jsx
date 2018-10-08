@@ -11,6 +11,8 @@ class WritingsPage extends React.Component {
             writingArr: [],
             timeSortedDescending: true,
             dateSortedDescending: true,
+            timeSortedActive: false,
+            dateSortedActive: true
         };
         this.viewWriting = this.viewWriting.bind(this);
         this.filterByDate = this.filterByDate.bind(this);
@@ -356,7 +358,9 @@ class WritingsPage extends React.Component {
 
         this.setState({
             writingArr: sortedArr,
-            dateSortedDescending: !this.state.dateSortedDescending
+            dateSortedDescending: !this.state.dateSortedDescending,
+            dateSortedActive: true,
+            timeSortedActive: false
         });
     }
 
@@ -376,7 +380,9 @@ class WritingsPage extends React.Component {
 
         this.setState({
             writingArr: sortedArr,
-            timeSortedDescending: !this.state.timeSortedDescending
+            timeSortedDescending: !this.state.timeSortedDescending,
+            dateSortedActive: false,
+            timeSortedActive: true
         });
     }
 
@@ -384,17 +390,37 @@ class WritingsPage extends React.Component {
         this.props.history.push(`/writings/${id}`);
     }
 
+    generateArrow(shouldPointUp) {
+        return shouldPointUp ? <span className="fas fa-long-arrow-alt-down" /> : <span className="fas fa-long-arrow-alt-up" />;
+        // return <span className="fas fa-long-arrow-alt-down" />
+    }
+
     render() {
 
         const writingIndexItemArr = this.state.writingArr.map((writing) => {
             return <WritingIndexItem key={writing.id} writing={writing} onClick={this.viewWriting.bind(this, writing.id)} />
         });
+
+        const timeArrow = this.generateArrow(this.state.timeSortedDescending);
+        const dateArrow = this.generateArrow(this.state.dateSortedDescending);
         
         return (
             <div className="writings-container">
                 <h1 className="writing-header">My Writings</h1>
                 <button className="sort-by-date" onClick={this.filterByDate}>Sort By Date</button>
                 <button className="sort-by-time-to-read" onClick={this.filterByTimeToRead}>Sort By Time To Read</button>
+
+                <div className="sort-by-time-to-read1" onClick={this.filterByTimeToRead}>
+                    <span className="fas fa-clock"></span>
+                    {this.state.timeSortedActive ? timeArrow : null}
+                </div>
+
+                <div className="sort-by-date" onClick={this.filterByDate}>
+                    <span className="fas fa-calendar-alt"></span>
+                    {this.state.dateSortedActive ? dateArrow : null}
+                </div>
+
+
                 <div className="writing-index-items-container">
                   {writingIndexItemArr}
                 </div>
