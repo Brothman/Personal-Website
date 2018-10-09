@@ -26,7 +26,7 @@ class WritingsPage extends React.Component {
         sortByTime.addEventListener('mouseover', (e) => {
             const readByTime = document.getElementsByClassName('writing-read-time');
             //turn all readByTimes turquoise on mouseover
-            [...readByTime].map(oneTime => oneTime.style.color = "#00ced1");
+            [...readByTime].map(oneTime => oneTime.style.color = "#ff00ff");
         });
 
         sortByTime.addEventListener('mouseout', (e) => {
@@ -42,7 +42,7 @@ class WritingsPage extends React.Component {
         sortByDate.addEventListener('mouseover', (e) => {
             const readByDate = document.getElementsByClassName('writing-date-published');
             //turn all readByTimes turquoise on mouseover
-            [...readByDate].map(oneDate => oneDate.style.color = "#00ced1");
+            [...readByDate].map(oneDate => oneDate.style.color = "#ff00ff");
         });
 
         sortByDate.addEventListener('mouseout', (e) => {

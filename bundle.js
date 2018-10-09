@@ -1561,7 +1561,7 @@ function (_React$Component) {
         var readByTime = document.getElementsByClassName('writing-read-time'); //turn all readByTimes turquoise on mouseover
 
         _toConsumableArray(readByTime).map(function (oneTime) {
-          return oneTime.style.color = "#00ced1";
+          return oneTime.style.color = "#ff00ff";
         });
       });
       sortByTime.addEventListener('mouseout', function (e) {
@@ -1578,7 +1578,7 @@ function (_React$Component) {
         var readByDate = document.getElementsByClassName('writing-date-published'); //turn all readByTimes turquoise on mouseover
 
         _toConsumableArray(readByDate).map(function (oneDate) {
-          return oneDate.style.color = "#00ced1";
+          return oneDate.style.color = "#ff00ff";
         });
       });
       sortByDate.addEventListener('mouseout', function (e) {
