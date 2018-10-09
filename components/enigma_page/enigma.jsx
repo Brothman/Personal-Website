@@ -7,7 +7,8 @@ class EnigmaPage extends React.Component {
         const headerContainer = document.querySelector('.header-container');
         const headerParticles = document.querySelector('.particles-wrapper-header');
 
-        if (headerContainer.style.height == '275px') {
+        //ensure headerContainer is defined, i.e. already mounted on page
+        if (headerContainer && headerContainer.style.height == '275px') {
             headerContainer.style.height = '90px';
             headerParticles.style.height = '90px';
         }
