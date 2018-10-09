@@ -1382,6 +1382,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _writing_index_item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./writing_index_item */ "./components/writings_page/writing_index_item.jsx");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -1427,10 +1435,49 @@ function (_React$Component) {
   }
 
   _createClass(WritingsPage, [{
+    key: "addMyEventListeners",
+    value: function addMyEventListeners() {
+      //MAKE SURE TO REMOVE EVENT LISTENERS WHEN WE UNMOUNT
+      var sortByTime = document.querySelector('.sort-by-time-to-read'); // debugger
+
+      sortByTime.addEventListener('mouseover', function (e) {
+        var readByTime = document.getElementsByClassName('writing-read-time'); //turn all readByTimes turquoise on mouseover
+
+        _toConsumableArray(readByTime).map(function (oneTime) {
+          return oneTime.style.color = "#00ced1";
+        });
+      });
+      sortByTime.addEventListener('mouseout', function (e) {
+        var readByTime = document.getElementsByClassName('writing-read-time'); //turn all readByTimes turquoise on mouseover
+
+        Array.from(readByTime).map(function (oneTime) {
+          return oneTime.style.color = "black";
+        });
+      }); //MAKE SURE TO REMOVE EVENT LISTENERS WHEN WE UNMOUNT
+
+      var sortByDate = document.querySelector('.sort-by-date'); // debugger
+
+      sortByDate.addEventListener('mouseover', function (e) {
+        var readByDate = document.getElementsByClassName('writing-date-published'); //turn all readByTimes turquoise on mouseover
+
+        _toConsumableArray(readByDate).map(function (oneDate) {
+          return oneDate.style.color = "#00ced1";
+        });
+      });
+      sortByDate.addEventListener('mouseout', function (e) {
+        var readByDate = document.getElementsByClassName('writing-date-published'); //turn all readByTimes turquoise on mouseover
+
+        Array.from(readByDate).map(function (oneDate) {
+          return oneDate.style.color = "black";
+        });
+      });
+    }
+  }, {
     key: "componentDidMount",
     value: function componentDidMount() {
-      //date.getTime() gives the unix timecode stamp
+      this.addMyEventListeners(); //date.getTime() gives the unix timecode stamp
       //0 for month represents january
+
       var writing24 = {
         id: 24,
         title: "Lost Confidence",

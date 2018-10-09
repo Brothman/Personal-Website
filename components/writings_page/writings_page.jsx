@@ -19,7 +19,44 @@ class WritingsPage extends React.Component {
         this.filterByTimeToRead = this.filterByTimeToRead.bind(this);
     }
 
+    addMyEventListeners(){
+        //MAKE SURE TO REMOVE EVENT LISTENERS WHEN WE UNMOUNT
+        const sortByTime = document.querySelector('.sort-by-time-to-read');
+        // debugger
+        sortByTime.addEventListener('mouseover', (e) => {
+            const readByTime = document.getElementsByClassName('writing-read-time');
+            //turn all readByTimes turquoise on mouseover
+            [...readByTime].map(oneTime => oneTime.style.color = "#00ced1");
+        });
+
+        sortByTime.addEventListener('mouseout', (e) => {
+            const readByTime = document.getElementsByClassName('writing-read-time');
+            //turn all readByTimes turquoise on mouseover
+            Array.from(readByTime).map(oneTime => oneTime.style.color = "black");
+        });
+
+
+        //MAKE SURE TO REMOVE EVENT LISTENERS WHEN WE UNMOUNT
+        const sortByDate = document.querySelector('.sort-by-date');
+        // debugger
+        sortByDate.addEventListener('mouseover', (e) => {
+            const readByDate = document.getElementsByClassName('writing-date-published');
+            //turn all readByTimes turquoise on mouseover
+            [...readByDate].map(oneDate => oneDate.style.color = "#00ced1");
+        });
+
+        sortByDate.addEventListener('mouseout', (e) => {
+            const readByDate = document.getElementsByClassName('writing-date-published');
+            //turn all readByTimes turquoise on mouseover
+            Array.from(readByDate).map(oneDate => oneDate.style.color = "black");
+        });
+
+
+    }
+
     componentDidMount() {
+       this.addMyEventListeners();
+
         //date.getTime() gives the unix timecode stamp
         //0 for month represents january
         const writing24 = {
