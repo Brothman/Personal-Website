@@ -1,6 +1,8 @@
 .particles-wrapper-header {
     height: 90px;
-    position: relative;
+    width: 100%;
+    top: 0;
+    position: fixed;
     z-index: 5;
     transition: height 2s ease;
 }
@@ -48,15 +50,14 @@
   transition: height 2s ease;
   overflow: hidden;
 }
-
+/* 
 .header-container:hover {
-b
     height: 275px;
 }
 
 .header-container:hover .particles-wrapper-header {
     height: 275px;
-}
+} */
 
 .nav-square:hover, .header-name:hover {
   opacity: 1;
@@ -70,4 +71,9 @@ b
 
 .header-nav-button {
     top: 75px;
+}
+
+
+.header-nav-buttons {
+    /* position: fixed; */
 }

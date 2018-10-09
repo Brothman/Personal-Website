@@ -2,6 +2,17 @@ import React from 'react';
 
 class About extends React.Component {
 
+    //Ensure the header resizes itself automatically when navigating to a new page
+    componentWillMount() {
+        const headerContainer = document.querySelector('.header-container');
+        const headerParticles = document.querySelector('.particles-wrapper-header');
+
+        if (headerContainer.style.height == '275px') {
+            headerContainer.style.height = '90px';
+            headerParticles.style.height = '90px';
+        }
+    }
+
     visitReact() {
         // window.location = "https://reactjs.org/";
         window.open("https://reactjs.org/");

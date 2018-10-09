@@ -129,6 +129,18 @@ function (_React$Component) {
   }
 
   _createClass(About, [{
+    key: "componentWillMount",
+    //Ensure the header resizes itself automatically when navigating to a new page
+    value: function componentWillMount() {
+      var headerContainer = document.querySelector('.header-container');
+      var headerParticles = document.querySelector('.particles-wrapper-header');
+
+      if (headerContainer.style.height == '275px') {
+        headerContainer.style.height = '90px';
+        headerParticles.style.height = '90px';
+      }
+    }
+  }, {
     key: "visitReact",
     value: function visitReact() {
       // window.location = "https://reactjs.org/";
@@ -480,9 +492,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _writing_page_writing_page__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./writing_page/writing_page */ "./components/writing_page/writing_page.jsx");
 /* harmony import */ var _about_page_v2_about__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./about_page_v2/about */ "./components/about_page_v2/about.jsx");
 /* harmony import */ var _sidebar_sidebar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./sidebar/sidebar */ "./components/sidebar/sidebar.jsx");
-/* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-particles-js */ "./node_modules/react-particles-js/lib/particles.js");
-/* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_particles_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _enigma_page_enigma_jsx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./enigma_page/enigma.jsx */ "./components/enigma_page/enigma.jsx");
+/* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-particles-js */ "./node_modules/react-particles-js/lib/particles.js");
+/* harmony import */ var react_particles_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_particles_js__WEBPACK_IMPORTED_MODULE_9__);
 var _this = undefined;
+
 
 
 
@@ -499,12 +513,17 @@ var ComponentWrapper = function ComponentWrapper(props) {
     props.history.push('/');
   };
 
-  var expandHeader = function expandHeader() {
+  var expandAndCloseHeader = function expandAndCloseHeader() {
     var headerContainer = document.querySelector('.header-container');
-    headerContainer.style.height = '275px';
-    headerContainer.style.maxHeight = '275px';
     var headerParticles = document.querySelector('.particles-wrapper-header');
-    headerParticles.style.height = '275px';
+
+    if (headerContainer.style.height == '275px') {
+      headerContainer.style.height = '90px';
+      headerParticles.style.height = '90px';
+    } else {
+      headerContainer.style.height = '275px';
+      headerParticles.style.height = '275px';
+    }
   };
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -518,9 +537,9 @@ var ComponentWrapper = function ComponentWrapper(props) {
     onClick: visitHome.bind(_this)
   }, "Benji Rothman"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "nav-square fas fa-bars",
-    onClick: expandHeader
+    onClick: expandAndCloseHeader
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "navigation-buttons"
+    className: "header-nav-buttons navigation-buttons"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
     activeStyle: {
       opacity: 1
@@ -545,7 +564,7 @@ var ComponentWrapper = function ComponentWrapper(props) {
     },
     className: "header-nav-button nav-button",
     to: "/enigma"
-  }, "Enigma")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_particles_js__WEBPACK_IMPORTED_MODULE_8___default.a, {
+  }, "Enigma")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_particles_js__WEBPACK_IMPORTED_MODULE_9___default.a, {
     className: "particles-wrapper-header",
     params: {
       "particles": {
@@ -582,10 +601,84 @@ var ComponentWrapper = function ComponentWrapper(props) {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/writings/:id",
     component: _writing_page_writing_page__WEBPACK_IMPORTED_MODULE_5__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/enigma",
+    component: _enigma_page_enigma_jsx__WEBPACK_IMPORTED_MODULE_8__["default"]
   }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(ComponentWrapper));
+
+/***/ }),
+
+/***/ "./components/enigma_page/enigma.jsx":
+/*!*******************************************!*\
+  !*** ./components/enigma_page/enigma.jsx ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var EnigmaPage =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(EnigmaPage, _React$Component);
+
+  function EnigmaPage() {
+    _classCallCheck(this, EnigmaPage);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(EnigmaPage).apply(this, arguments));
+  }
+
+  _createClass(EnigmaPage, [{
+    key: "componentWillMount",
+    //Ensure the header resizes itself automatically when navigating to a new page
+    value: function componentWillMount() {
+      var headerContainer = document.querySelector('.header-container');
+      var headerParticles = document.querySelector('.particles-wrapper-header');
+
+      if (headerContainer.style.height == '275px') {
+        headerContainer.style.height = '90px';
+        headerParticles.style.height = '90px';
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      //only add a fillerDiv element if the screen is smaller than 1008 pixels and we've resized to add a header element
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "enigma-container"
+      });
+    }
+  }]);
+
+  return EnigmaPage;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (EnigmaPage);
 
 /***/ }),
 
@@ -738,9 +831,21 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(ProjectsPage).call(this, props));
     _this.visitPersonalWebsite = _this.visitPersonalWebsite.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     return _this;
-  }
+  } //Ensure the header resizes itself automatically when navigating to a new page
+
 
   _createClass(ProjectsPage, [{
+    key: "componentWillMount",
+    value: function componentWillMount() {
+      var headerContainer = document.querySelector('.header-container');
+      var headerParticles = document.querySelector('.particles-wrapper-header');
+
+      if (headerContainer.style.height == '275px') {
+        headerContainer.style.height = '90px';
+        headerParticles.style.height = '90px';
+      }
+    }
+  }, {
     key: "visitMortalNote",
     value: function visitMortalNote() {
       // window.location = "http://mortal-note.herokuapp.com";
@@ -1062,6 +1167,18 @@ function (_React$Component) {
   }
 
   _createClass(WritingPage, [{
+    key: "componentWillMount",
+    //Ensure the header resizes itself automatically when navigating to a new page
+    value: function componentWillMount() {
+      var headerContainer = document.querySelector('.header-container');
+      var headerParticles = document.querySelector('.particles-wrapper-header');
+
+      if (headerContainer.style.height == '275px') {
+        headerContainer.style.height = '90px';
+        headerParticles.style.height = '90px';
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
       var writing24 = {
@@ -1471,6 +1588,18 @@ function (_React$Component) {
           return oneDate.style.color = "black";
         });
       });
+    } //Ensure the header resizes itself automatically when navigating to a new page
+
+  }, {
+    key: "componentWillMount",
+    value: function componentWillMount() {
+      var headerContainer = document.querySelector('.header-container');
+      var headerParticles = document.querySelector('.particles-wrapper-header');
+
+      if (headerContainer.style.height == '275px') {
+        headerContainer.style.height = '90px';
+        headerParticles.style.height = '90px';
+      }
     }
   }, {
     key: "componentDidMount",
