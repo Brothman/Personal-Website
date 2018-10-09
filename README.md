@@ -20,9 +20,9 @@ You can [access](http://brainy-cow.surge.sh) the site at <http://benjirothman.co
 
 I implemented a simple CSS animation combined with a two-second `setTimeout()` on the Landing Page. This offers the illusion of loading as the user enters the site. I remove the `setTimeout()` with `clearTimeout()` if the user navigates to another portion of the website before the two-seconds pass. 
 
-#### Rich Text Editing
+#### Google Doc Embedding
 
-Benji's Personal Website implements ReactQuill, a React Component that wraps around the popular Quill.js library. This allows for an easy, attractive, and non-interactive Rich Text rendering of my stories on the webpage. 
+Benji's Personal Website implements embedded Google Docs to display writings. This allows for an easy, attractive, and responsive Rich Text rendering of written content. 
 
 #### CSS Grid Responsiveness
 
@@ -51,4 +51,4 @@ This software uses code from several open source packages, including the followi
 
 * [React](https://github.com/facebook/react)
 
-* [React Quill](https://github.com/zenoamaro/react-quill)
+* [React Particles JS](https://github.com/Wufe/react-particles-js)
