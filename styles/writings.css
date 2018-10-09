@@ -149,8 +149,18 @@
     float: right;
     cursor: pointer;
     transition: opacity 0.3s ease;
+    opacity: 0.2;
 }
 
 .sort-by-date:hover, .sort-by-time-to-read:hover {
-    opacity: 0.5;
+    opacity: 1;
 }
+
+
+.sort-by-time-to-read:hover .writing-read-time {
+    font-size: 60px;
+}
+
+/* .sort-by-time-to-read:hover ~ .writing-read-time {
+    font-size: 60px;
+} */
