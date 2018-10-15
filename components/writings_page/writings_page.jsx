@@ -71,22 +71,11 @@ class WritingsPage extends React.Component {
 
         //date.getTime() gives the unix timecode stamp
         //0 for month represents january
-        const writing29 = {
-            id: 29,
-            title: "The Future",
-            blurb: "An essay about an unhealthy relationship to a dimension of time.",
-            author: "Benji Rothman",
-            datePublished: "Jul 23, 2015",
-            readTime: "6 min read",
-            intTime: 6,
-            intDate: new Date(2015, 6, 23),
-            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
-            content: "https://docs.google.com/document/d/e/2PACX-1vRp5Z-DmrksQx4fi7MHVkNHCXTOL8-DPUp0wXnYd9JVOOIsL1Z3K8OalBR9bXtsOKo7GwfXT4awiGpI/pub?embedded=true",
-        };
+
         const writing28 = {
             id: 28,
             title: "Thoughts on Running Away",
-            blurb: "An essay written shortly after my father died.",
+            blurb: "A scared soul shares why he runs away from his demons.",
             author: "Benji Rothman",
             datePublished: "Jun 30, 2017",
             readTime: "3 min read",
@@ -98,7 +87,7 @@ class WritingsPage extends React.Component {
         const writing27 = {
             id: 27,
             title: "Friendship",
-            blurb: "An essay written shortly after my father died.",
+            blurb: "An eighteen year old attempts to define what friendship means to him.",
             author: "Benji Rothman",
             datePublished: "Jul 3, 2015",
             readTime: "3 min read",
@@ -122,7 +111,7 @@ class WritingsPage extends React.Component {
         const writing25 = {
             id: 25,
             title: "If I Were To Die Tomorrow",
-            blurb: "An essay written shortly after my father died.",
+            blurb: "A poem about mortality.",
             author: "Benji Rothman",
             datePublished: "Jun 18, 2015",
             readTime: "6 min read",
@@ -158,7 +147,7 @@ class WritingsPage extends React.Component {
         const writing22 = {
             id: 22,
             title: "University, the Home of the Challenging Idea...Or So I Thought",
-            blurb: "An essay written shortly after my father died.",
+            blurb: "An essay that explores the rise of political correctness on college campuses.",
             author: "Benji Rothman",
             datePublished: "Mar 2, 2018",
             readTime: "10 min read",
@@ -199,7 +188,8 @@ class WritingsPage extends React.Component {
             readTime: "8 min read",
             intTime: 8,
             intDate: new Date(2017, 9, 8),
-            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/confusion.jpg"
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/confusion.jpg",
+            content: ""
         };
         const writing18 = {
             id: 18,
@@ -210,7 +200,8 @@ class WritingsPage extends React.Component {
             readTime: "20 min read",
             intTime: 20,
             intDate: new Date(2017, 4, 5),
-            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/JuBu.jpg"
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/JuBu.jpg",
+            content: ""
         };
         const writing17 = {
             id: 17,
@@ -311,14 +302,14 @@ class WritingsPage extends React.Component {
         const writing9 = {
             id: 9,
             title: "The Future",
-            blurb: "An essay written shortly after my father died.",
+            blurb: "An essay about my unhealthy relationship to a dimension of time.",
             author: "Benji Rothman",
             datePublished: "Jul 23, 2015",
-            readTime: "10 min read",
-            intTime: 10,
+            readTime: "6 min read",
+            intTime: 6,
             intDate: new Date(2015, 6, 23),
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
-            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+            content: "https://docs.google.com/document/d/e/2PACX-1vRp5Z-DmrksQx4fi7MHVkNHCXTOL8-DPUp0wXnYd9JVOOIsL1Z3K8OalBR9bXtsOKo7GwfXT4awiGpI/pub?embedded=true",
         };
         const writing8 = {
             id: 8,
