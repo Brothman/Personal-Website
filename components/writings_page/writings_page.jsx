@@ -71,6 +71,66 @@ class WritingsPage extends React.Component {
 
         //date.getTime() gives the unix timecode stamp
         //0 for month represents january
+        const writing29 = {
+            id: 29,
+            title: "The Future",
+            blurb: "An essay about an unhealthy relationship to a dimension of time.",
+            author: "Benji Rothman",
+            datePublished: "Jul 23, 2015",
+            readTime: "6 min read",
+            intTime: 6,
+            intDate: new Date(2015, 6, 23),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vRp5Z-DmrksQx4fi7MHVkNHCXTOL8-DPUp0wXnYd9JVOOIsL1Z3K8OalBR9bXtsOKo7GwfXT4awiGpI/pub?embedded=true",
+        };
+        const writing28 = {
+            id: 28,
+            title: "Thoughts on Running Away",
+            blurb: "An essay written shortly after my father died.",
+            author: "Benji Rothman",
+            datePublished: "Jun 30, 2017",
+            readTime: "3 min read",
+            intTime: 3,
+            intDate: new Date(2017, 5, 30),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vSW5gtweuWS4xf2inTmVGUL_8byeZQxH2VV7glDb81mvYqINdWC5MZwteBBngZrNoWBEUSr4eKRxrZ-/pub?embedded=true",
+        };
+        const writing27 = {
+            id: 27,
+            title: "Friendship",
+            blurb: "An essay written shortly after my father died.",
+            author: "Benji Rothman",
+            datePublished: "Jul 3, 2015",
+            readTime: "3 min read",
+            intTime: 3,
+            intDate: new Date(2015, 6, 3),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vTghTJbeYqQIyN9FmPXtgBfUEDQuNrMPIztFUq0ljsBTQFDeemu4ViE0LGEym17seXUpEcNyYzWADPt/pub?embedded=true",
+        };
+        const writing26 = {
+            id: 26,
+            title: "The Answering Machine",
+            blurb: "Pierre leaves a surprising voicemail for his wife, Anita.",
+            author: "Pierre",
+            datePublished: "Jun 19, 2015",
+            readTime: "4 min read",
+            intTime: 4,
+            intDate: new Date(2018, 5, 19),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQWTu8vr2PjFO2jQjzC5hcDBuBS8lEZKkxq-VrPZDcCycnkoCMnO8yXmXFgKaeGO5bXGUEXIH4gz2lz/pub?embedded=true",
+        };
+        const writing25 = {
+            id: 25,
+            title: "If I Were To Die Tomorrow",
+            blurb: "An essay written shortly after my father died.",
+            author: "Benji Rothman",
+            datePublished: "Jun 18, 2015",
+            readTime: "6 min read",
+            intTime: 6,
+            intDate: new Date(2018, 5, 18),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vRfb1ouHi1sBFave2XL0eCCJzHaMs8vunz46L1PdNAI-mXelDrJUAa3E-UfT8arAe9Rt94QOoEAxd0V/pub?embedded=true",
+        };
         const writing24 = {
             id: 24,
             title: "Lost Confidence",
