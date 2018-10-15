@@ -326,14 +326,14 @@ class WritingsPage extends React.Component {
         const writing7 = {
             id: 7,
             title: "Forever Empty",
-            blurb: "An essay written shortly after my father died.",
+            blurb: "Am I an unhappy person?",
             author: "Benji Rothman",
             datePublished: "Jul 20, 2015",
-            readTime: "10 min read",
-            intTime: 10,
+            readTime: "6 min read",
+            intTime: 6,
             intDate: new Date(2015, 6, 20),
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
-            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+            content: "https://docs.google.com/document/d/e/2PACX-1vTIY0RIS-DXpYtXtBAJNblW_oXgokPrGPDX3xurdjHUFLj1A2kx8TyhSj3WpGrbILQDmQiGYZsfl2S6/pub?embedded=true",
         };
         const writing6 = {
             id: 6,
