@@ -10,9 +10,9 @@ class WritingsPage extends React.Component {
         this.state = {
             writingArr: [],
             timeSortedDescending: false,
-            dateSortedDescending: true,
+            dateSortedDescending: false,
             timeSortedActive: false,
-            dateSortedActive: true
+            dateSortedActive: false
         };
         this.viewWriting = this.viewWriting.bind(this);
         this.filterByDate = this.filterByDate.bind(this);
@@ -71,17 +71,88 @@ class WritingsPage extends React.Component {
 
         //date.getTime() gives the unix timecode stamp
         //0 for month represents january
-
+        const writing34 = {
+            id: 34,
+            title: "Post Vision Quest",
+            blurb: "Brandon Email Saga #5: A leader is born.",
+            author: "Benji Rothman",
+            datePublished: "May 14, 2018",
+            readTime: "10 min read",
+            intTime: 10,
+            intDate: new Date(2018, 4, 14),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Albuquerque+Mountains.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vSEa3O31NpEQWDhGR44-TUgLgAhq_nqSopuYGbOJp-HfARSphW4LAqTYLx-H9OGJoQYtCUJY7BsUNIE/pub?embedded=true",
+        };
+        const writing33 = {
+            id: 33,
+            title: "Good Ideas From The Alchemist",
+            blurb: "Philosophy, a book, and a poem.",
+            author: "Benji Rothman",
+            datePublished: "Apr 29, 2018",
+            readTime: "10 min read",
+            intTime: 10,
+            intDate: new Date(2018, 3, 29),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/the-alchemist-coverjpg.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vS6ca19hhroN2ktjyr6_CZ0JQs-cpwtukL6zwntFSpfonxBAEJQdRaYewPfJka5fZyZQ77MVh8M3UH4/pub?embedded=true",
+        };
+        const writing32 = {
+            id: 32,
+            title: "Insights and Questions",
+            blurb: "Brandon Email Saga #4: There is only the peace that must be won again and again, each new day of our lives.",
+            author: "Benji Rothman",
+            datePublished: "Apr 29, 2018",
+            readTime: "30 min read",
+            intTime: 30,
+            intDate: new Date(2018, 3, 29),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/questions.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQeMKl949Z2lDSDst9q4_dFfRt74E2ZyCYQCoEEygzclazSKx8Za3OztVqGFgS-WrDzgw2yf2nsnfS6/pub?embedded=true",
+        };
+        const writing31 = {
+            id: 31,
+            title: "Runner's High and Lover's Low",
+            blurb: "Brandon Email Saga #3: God fucked me over. God took something from me. Does God need my forgiveness?",
+            author: "Benji Rothman",
+            datePublished: "Apr 27, 2018",
+            readTime: "18 min read",
+            intTime: 18,
+            intDate: new Date(2018, 3, 27),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Runners+High+and+Lovers+Low.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vTN873ku0uey9M4iL0Yh99KbdnhAs73s_JvfeW2BEgJWN0QN2s5PoujF0Ae0pLNjNl4QTI1k5BY7u-e/pub?embedded=true",
+        };
+        const writing30 = {
+            id: 30,
+            title: "The Struggle",
+            blurb: "Brandon Email Saga #2: A man refuses to let his fate be his destiny.",
+            author: "Benji Rothman",
+            datePublished: "Apr 21, 2018",
+            readTime: "20 min read",
+            intTime: 20,
+            intDate: new Date(2018, 3, 21),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Struggle.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQrAy1ACMyw9fMc6grv2uTOFlQO_sqm1p1y4zl8lKlnVxQOC77yDy0ggdeLjtNnK2SfjdRVt_jdcF2g/pub?embedded=true",
+        };
+        const writing29 = {
+            id: 29,
+            title: "To Live Is To Love",
+            blurb: "Brandon Email Saga #1: When do I feel most alive? When I love.",
+            author: "Benji Rothman",
+            datePublished: "Apr 16, 2018",
+            readTime: "25 min read",
+            intTime: 25,
+            intDate: new Date(2018, 3, 16),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Love.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQiU3t4F05entTX2GH3TFCO9C_-fMvPDXonfFkuQEG98Z3Y2mqinhn9PuN5pnznYDTyOEc2PrPtk2l4/pub?embedded=true",
+        };
         const writing28 = {
             id: 28,
             title: "Thoughts on Running Away",
             blurb: "A scared soul shares why he runs away from his demons.",
             author: "Benji Rothman",
             datePublished: "Jun 30, 2017",
-            readTime: "3 min read",
-            intTime: 3,
+            readTime: "4 min read",
+            intTime: 4,
             intDate: new Date(2017, 5, 30),
-            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Running+Away.jpg",
             content: "https://docs.google.com/document/d/e/2PACX-1vSW5gtweuWS4xf2inTmVGUL_8byeZQxH2VV7glDb81mvYqINdWC5MZwteBBngZrNoWBEUSr4eKRxrZ-/pub?embedded=true",
         };
         const writing27 = {
@@ -93,7 +164,7 @@ class WritingsPage extends React.Component {
             readTime: "3 min read",
             intTime: 3,
             intDate: new Date(2015, 6, 3),
-            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Friendship.jpeg",
             content: "https://docs.google.com/document/d/e/2PACX-1vTghTJbeYqQIyN9FmPXtgBfUEDQuNrMPIztFUq0ljsBTQFDeemu4ViE0LGEym17seXUpEcNyYzWADPt/pub?embedded=true",
         };
         const writing26 = {
@@ -104,8 +175,8 @@ class WritingsPage extends React.Component {
             datePublished: "Jun 19, 2015",
             readTime: "4 min read",
             intTime: 4,
-            intDate: new Date(2018, 5, 19),
-            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            intDate: new Date(2015, 5, 19),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Answering+Machine.jpg",
             content: "https://docs.google.com/document/d/e/2PACX-1vQWTu8vr2PjFO2jQjzC5hcDBuBS8lEZKkxq-VrPZDcCycnkoCMnO8yXmXFgKaeGO5bXGUEXIH4gz2lz/pub?embedded=true",
         };
         const writing25 = {
@@ -116,8 +187,8 @@ class WritingsPage extends React.Component {
             datePublished: "Jun 18, 2015",
             readTime: "6 min read",
             intTime: 6,
-            intDate: new Date(2018, 5, 18),
-            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            intDate: new Date(2015, 5, 18),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Death.jpg",
             content: "https://docs.google.com/document/d/e/2PACX-1vRfb1ouHi1sBFave2XL0eCCJzHaMs8vunz46L1PdNAI-mXelDrJUAa3E-UfT8arAe9Rt94QOoEAxd0V/pub?embedded=true",
         };
         const writing24 = {
@@ -125,10 +196,10 @@ class WritingsPage extends React.Component {
             title: "Lost Confidence",
             blurb: "An essay written shortly after my father died.",
             author: "Benji Rothman",
-            datePublished: "May 14, 2018",
+            datePublished: "Apr 21, 2018",
             readTime: "15 min read",
             intTime: 15,
-            intDate: new Date(2018, 4, 14),
+            intDate: new Date(2018, 3, 21),
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
             content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
         };
@@ -332,7 +403,7 @@ class WritingsPage extends React.Component {
             readTime: "6 min read",
             intTime: 6,
             intDate: new Date(2015, 6, 20),
-            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Forever+Empty.jpg",
             content: "https://docs.google.com/document/d/e/2PACX-1vTIY0RIS-DXpYtXtBAJNblW_oXgokPrGPDX3xurdjHUFLj1A2kx8TyhSj3WpGrbILQDmQiGYZsfl2S6/pub?embedded=true",
         };
         const writing6 = {
@@ -409,7 +480,16 @@ class WritingsPage extends React.Component {
         };
 
         const writingArr = [
-
+            writing34,
+            writing33,
+            writing32,
+            writing31,
+            writing30,
+            writing29,
+            writing28,
+            writing27,
+            writing26,
+            writing25,
             writing24,
             writing23,
             writing22,
@@ -436,9 +516,10 @@ class WritingsPage extends React.Component {
             writing1,
         ];
 
+        // this.filterByDate();
         this.setState({
             writingArr: writingArr
-        });
+        }, this.filterByDate);
     }
 
     filterByDate() {
