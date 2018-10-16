@@ -1381,8 +1381,8 @@ function (_React$Component) {
         blurb: "A young Jew confronts God in the form of the Buddha.",
         author: "Benji Rothman",
         datePublished: "May 5, 2017",
-        readTime: "30 min read",
-        intTime: 30,
+        readTime: "40 min read",
+        intTime: 40,
         intDate: new Date(2017, 4, 5),
         imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/JuBu.jpg",
         content: "https://docs.google.com/document/d/e/2PACX-1vTVw6MUL7GVYu81kYyJtuVoE2AsO518fMQYG40rFzCvD9ox4SgtwVP3_XhkfztLkE0bsM1G-bx9U4km/pub?embedded=true"
@@ -1979,8 +1979,8 @@ function (_React$Component) {
         blurb: "A young Jew confronts God in the form of the Buddha.",
         author: "Benji Rothman",
         datePublished: "May 5, 2017",
-        readTime: "30 min read",
-        intTime: 30,
+        readTime: "40 min read",
+        intTime: 40,
         intDate: new Date(2017, 4, 5),
         imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/JuBu.jpg",
         content: "https://docs.google.com/document/d/e/2PACX-1vTVw6MUL7GVYu81kYyJtuVoE2AsO518fMQYG40rFzCvD9ox4SgtwVP3_XhkfztLkE0bsM1G-bx9U4km/pub?embedded=true"
