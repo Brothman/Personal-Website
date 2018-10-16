@@ -253,14 +253,14 @@ class WritingsPage extends React.Component {
         const writing19 = {
             id: 19,
             title: "Two Confused Boys",
-            blurb: "The last bit of fake data. This shall be the ignition into life we've always desired",
+            blurb: "A young man's tale of friendship.",
             author: "Benji Rothman",
             datePublished: "Oct 8, 2017",
             readTime: "8 min read",
             intTime: 8,
             intDate: new Date(2017, 9, 8),
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/confusion.jpg",
-            content: ""
+            content: "https://docs.google.com/document/d/e/2PACX-1vQj-4Ae3WvWeEN77YO26lB6-nDdg5EvTr91FRFR5GgYSe5CW6AJ0Q0xyIamHi0rRlG7afPwH1JDQbkG/pub?embedded=true"
         };
         const writing18 = {
             id: 18,
@@ -272,7 +272,7 @@ class WritingsPage extends React.Component {
             intTime: 20,
             intDate: new Date(2017, 4, 5),
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/JuBu.jpg",
-            content: ""
+            content: "https://docs.google.com/document/d/e/2PACX-1vTVw6MUL7GVYu81kYyJtuVoE2AsO518fMQYG40rFzCvD9ox4SgtwVP3_XhkfztLkE0bsM1G-bx9U4km/pub?embedded=true"
         };
         const writing17 = {
             id: 17,
@@ -307,8 +307,8 @@ class WritingsPage extends React.Component {
             readTime: "30 min read",
             intTime: 30,
             intDate: new Date(2015, 7, 15),
-            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
-            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/perfect-day.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vRF8_OPXFgjA4Zh06rXhparGsRQicrgNZuQlyks72hDEtOuijYWwZ8wKWAnYC0tsWTVMif9N6NxqZrV/pub?embedded=true",
         };
         const writing14 = {
             id: 14,
@@ -368,7 +368,7 @@ class WritingsPage extends React.Component {
             intTime: 3,
             intDate: new Date(2015, 6, 24),
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/strength.png",
-            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+            content: "https://docs.google.com/document/d/e/2PACX-1vRSffklEkjoicG1fXYO7yOpWOYj--V3VmsEnL1APtWTTNIQxyzARWEFqiRkNDiVvA8n4uq5mlmbYqbf/pub?embedded=true",
         };
         const writing9 = {
             id: 9,
@@ -379,7 +379,7 @@ class WritingsPage extends React.Component {
             readTime: "6 min read",
             intTime: 6,
             intDate: new Date(2015, 6, 23),
-            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/The-Future-Is-Bright.jpg",
             content: "https://docs.google.com/document/d/e/2PACX-1vRp5Z-DmrksQx4fi7MHVkNHCXTOL8-DPUp0wXnYd9JVOOIsL1Z3K8OalBR9bXtsOKo7GwfXT4awiGpI/pub?embedded=true",
         };
         const writing8 = {
@@ -420,15 +420,15 @@ class WritingsPage extends React.Component {
         };
         const writing5 = {
             id: 5,
-            title: "Why Take College Courses?",
-            blurb: "An essay written shortly after my father died.",
+            title: "Why Should I Go To College?",
+            blurb: "A young mind rationalizes the exorbidant expense of college.",
             author: "Benji Rothman",
             datePublished: "Jul 12, 2015",
             readTime: "10 min read",
             intTime: 10,
             intDate: new Date(2015, 6, 12),
-            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Mr-Nobody.jpg",
-            content: "https://docs.google.com/document/d/e/2PACX-1vQoQCGzB2GhtU4KW3vtpKuv53IdYbCFFesmfsPm_OXnyenJSMU-SiO6n0duuQptLfdcHJA84M8q914h/pub?embedded=true",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/college_graduate.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vRnnk4n20yATECpFaEgp5DwWekRTuFSeebyFO87C8elNsQd8AxTSJfbk3PZXLwsubMBfcftrJDa9Dv_/pub?embedded=true",
         };
         const writing4 = {
             id: 4,
