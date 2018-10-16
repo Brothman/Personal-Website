@@ -230,13 +230,14 @@ class WritingsPage extends React.Component {
         const writing21 = {
             id: 21,
             title: "Human Nature",
-            blurb: "The last bit of fake data. This shall be the ignition into life we've always desired",
+            blurb: "A short play about two Chinese philosophers. Is Mengzi right and human nature good? Or does Xunzi know the truth and human nature evil?",
             author: "Benji Rothman",
             datePublished: "Dec 13, 2017",
-            readTime: "30 min read",
-            intTime: 30,
+            readTime: "60 min read",
+            intTime: 60,
             intDate: new Date(2017, 11, 13),
-            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Human_Nature.jpg"
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Human_Nature.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQTb3y4TtDJ7X8R3hE_ELlY7SDzIcSs81HoYp8QrCUZ_k-ve9ttNB-v9AKVCoE9j2XRtvNiy7oJ-uru/pub?embedded=true"
         };
         const writing20 = {
             id: 20,
@@ -268,8 +269,8 @@ class WritingsPage extends React.Component {
             blurb: "A young Jew confronts God in the form of the Buddha.",
             author: "Benji Rothman",
             datePublished: "May 5, 2017",
-            readTime: "20 min read",
-            intTime: 20,
+            readTime: "30 min read",
+            intTime: 30,
             intDate: new Date(2017, 4, 5),
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/JuBu.jpg",
             content: "https://docs.google.com/document/d/e/2PACX-1vTVw6MUL7GVYu81kYyJtuVoE2AsO518fMQYG40rFzCvD9ox4SgtwVP3_XhkfztLkE0bsM1G-bx9U4km/pub?embedded=true"
@@ -304,8 +305,8 @@ class WritingsPage extends React.Component {
             blurb: "A visualization exercise to bring my ideal life and my actual life closer together.",
             author: "Benji Rothman",
             datePublished: "Aug 15, 2015",
-            readTime: "30 min read",
-            intTime: 30,
+            readTime: "45 min read",
+            intTime: 45,
             intDate: new Date(2015, 7, 15),
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/perfect-day.jpg",
             content: "https://docs.google.com/document/d/e/2PACX-1vRF8_OPXFgjA4Zh06rXhparGsRQicrgNZuQlyks72hDEtOuijYWwZ8wKWAnYC0tsWTVMif9N6NxqZrV/pub?embedded=true",
