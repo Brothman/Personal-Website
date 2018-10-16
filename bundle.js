@@ -1413,7 +1413,7 @@ function (_React$Component) {
       var writing15 = {
         id: 15,
         title: "My Perfect Day",
-        blurb: "An essay written shortly after my father died.",
+        blurb: "A visualization exercise to bring my ideal life and my actual life closer together.",
         author: "Benji Rothman",
         datePublished: "Aug 15, 2015",
         readTime: "30 min read",
@@ -2010,7 +2010,7 @@ function (_React$Component) {
       var writing15 = {
         id: 15,
         title: "My Perfect Day",
-        blurb: "An essay written shortly after my father died.",
+        blurb: "A visualization exercise to bring my ideal life and my actual life closer together.",
         author: "Benji Rothman",
         datePublished: "Aug 15, 2015",
         readTime: "30 min read",
