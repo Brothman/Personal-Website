@@ -71,6 +71,18 @@ class WritingsPage extends React.Component {
 
         //date.getTime() gives the unix timecode stamp
         //0 for month represents january
+        const writing35 = {
+            id: 35,
+            title: "The I-Me Theory",
+            blurb: "A philosophical exploration of self love.",
+            author: "Olivia Kleynhans",
+            datePublished: "Sept 2, 2018",
+            readTime: "18 min read",
+            intTime: 18,
+            intDate: new Date(2018, 8, 2),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/With+Empathy+She+Is+Sown.jpg?versionId=XEJs4daHtfikTTYF4h3R8c2iH0d9xIfy",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQVdCYBOTzgWk1QWgahQuwKhw3bo29D5S1eWkgt5KBh3NeGOvrLa7Ryp3n7GT1F8EWM7ZvOqKcuguNi/pub?embedded=true",
+        };
         const writing34 = {
             id: 34,
             title: "Post Vision Quest",
@@ -481,6 +493,7 @@ class WritingsPage extends React.Component {
         };
 
         const writingArr = [
+            writing35,
             writing34,
             writing33,
             writing32,

@@ -1183,6 +1183,18 @@ function (_React$Component) {
     value: function render() {
       //date.getTime() gives the unix timecode stamp
       //0 for month represents january
+      var writing35 = {
+        id: 35,
+        title: "The I-Me Theory",
+        blurb: "A philosophical exploration of self love.",
+        author: "Olivia Kleynhans",
+        datePublished: "Sept 2, 2018",
+        readTime: "18 min read",
+        intTime: 18,
+        intDate: new Date(2018, 8, 2),
+        imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/With+Empathy+She+Is+Sown.jpg?versionId=XEJs4daHtfikTTYF4h3R8c2iH0d9xIfy",
+        content: "https://docs.google.com/document/d/e/2PACX-1vQVdCYBOTzgWk1QWgahQuwKhw3bo29D5S1eWkgt5KBh3NeGOvrLa7Ryp3n7GT1F8EWM7ZvOqKcuguNi/pub?embedded=true"
+      };
       var writing34 = {
         id: 34,
         title: "Post Vision Quest",
@@ -1591,7 +1603,7 @@ function (_React$Component) {
         imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/summer-day.jpg",
         content: "https://docs.google.com/document/d/e/2PACX-1vToCKnJ7mMAbK7ZCcAT53xNtPIkP6HQQrs2nhbmjYilBmGKbqwkXBhfMPoQ-ZSacdlkPXjV33liUaje/pub?embedded=true"
       };
-      var writingArr = [writing34, writing33, writing32, writing31, writing30, writing29, writing28, writing27, writing26, writing25, writing24, writing23, writing22, writing21, writing20, writing19, writing18, writing17, writing16, writing15, writing14, writing13, writing12, writing11, writing10, writing9, writing8, writing7, writing6, writing5, writing4, writing3, writing2, writing1];
+      var writingArr = [writing35, writing34, writing33, writing32, writing31, writing30, writing29, writing28, writing27, writing26, writing25, writing24, writing23, writing22, writing21, writing20, writing19, writing18, writing17, writing16, writing15, writing14, writing13, writing12, writing11, writing10, writing9, writing8, writing7, writing6, writing5, writing4, writing3, writing2, writing1];
       var length = writingArr.length;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "one-writing-container"
@@ -1781,6 +1793,18 @@ function (_React$Component) {
       this.addMyEventListeners(); //date.getTime() gives the unix timecode stamp
       //0 for month represents january
 
+      var writing35 = {
+        id: 35,
+        title: "The I-Me Theory",
+        blurb: "A philosophical exploration of self love.",
+        author: "Olivia Kleynhans",
+        datePublished: "Sept 2, 2018",
+        readTime: "18 min read",
+        intTime: 18,
+        intDate: new Date(2018, 8, 2),
+        imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/With+Empathy+She+Is+Sown.jpg?versionId=XEJs4daHtfikTTYF4h3R8c2iH0d9xIfy",
+        content: "https://docs.google.com/document/d/e/2PACX-1vQVdCYBOTzgWk1QWgahQuwKhw3bo29D5S1eWkgt5KBh3NeGOvrLa7Ryp3n7GT1F8EWM7ZvOqKcuguNi/pub?embedded=true"
+      };
       var writing34 = {
         id: 34,
         title: "Post Vision Quest",
@@ -2189,7 +2213,7 @@ function (_React$Component) {
         imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/summer-day.jpg",
         content: "https://docs.google.com/document/d/e/2PACX-1vToCKnJ7mMAbK7ZCcAT53xNtPIkP6HQQrs2nhbmjYilBmGKbqwkXBhfMPoQ-ZSacdlkPXjV33liUaje/pub?embedded=true"
       };
-      var writingArr = [writing34, writing33, writing32, writing31, writing30, writing29, writing28, writing27, writing26, writing25, writing24, writing23, writing22, writing21, writing20, writing19, writing18, writing17, writing16, writing15, writing14, writing13, writing12, writing11, writing10, writing9, writing8, writing7, writing6, writing5, writing4, writing3, writing2, writing1]; // this.filterByDate();
+      var writingArr = [writing35, writing34, writing33, writing32, writing31, writing30, writing29, writing28, writing27, writing26, writing25, writing24, writing23, writing22, writing21, writing20, writing19, writing18, writing17, writing16, writing15, writing14, writing13, writing12, writing11, writing10, writing9, writing8, writing7, writing6, writing5, writing4, writing3, writing2, writing1]; // this.filterByDate();
 
       this.setState({
         writingArr: writingArr
