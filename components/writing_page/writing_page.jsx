@@ -121,8 +121,13 @@ class WritingPage extends React.Component {
             blurb: "An eighteen year old attempts to define what friendship means to him.",
             author: "Benji Rothman",
             datePublished: "Jul 3, 2015",
+<<<<<<< HEAD
             readTime: "2 min read",
             intTime: 2,
+=======
+            readTime: "3 min read",
+            intTime: 3,
+>>>>>>> 898749fe24349b329ff543c10b238cf9e4fd6f3e
             intDate: new Date(2015, 6, 3),
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Friendship.jpeg",
             content: "https://docs.google.com/document/d/e/2PACX-1vTghTJbeYqQIyN9FmPXtgBfUEDQuNrMPIztFUq0ljsBTQFDeemu4ViE0LGEym17seXUpEcNyYzWADPt/pub?embedded=true",

@@ -81,7 +81,8 @@ class About extends React.Component {
 
     visitResume() {
         // window.location = "https://docs.google.com/document/d/1Y8s4-hK9l1nDmYPUC24o1jXvIjKGPUpxEEAoPhoP1C0/edit?usp=sharing";
-        window.open("https://docs.google.com/document/d/1Y8s4-hK9l1nDmYPUC24o1jXvIjKGPUpxEEAoPhoP1C0/edit?usp=sharing");
+        // window.open("https://docs.google.com/document/d/1Y8s4-hK9l1nDmYPUC24o1jXvIjKGPUpxEEAoPhoP1C0/edit?usp=sharing"); 
+        window.open("../../utils/Resume_Benji_Rothman_Web_Developer.pdf"); 
     }
 
     //all three methods work
