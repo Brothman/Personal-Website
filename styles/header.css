@@ -78,3 +78,10 @@
 .header-nav-buttons {
     /* position: fixed; */
 }
+
+/* Handles smart phones turned sideways */
+@media only screen and (max-width: 900px) {
+   .header-nav-button {
+     top: 90px;
+    }
+}
