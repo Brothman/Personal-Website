@@ -31,7 +31,7 @@
 .writing-header {
     justify-self: center;
     text-align: center;
-    min-width: 695px;
+    min-width: 680px;
     border-bottom: 2px solid rgba(204, 204, 204, 0.5);
     padding-bottom: 15px;
     padding-top: 0;
@@ -165,3 +165,41 @@
 /* .sort-by-time-to-read:hover ~ .writing-read-time {
     font-size: 60px;
 } */
+
+@media only screen and (max-width: 695px ) {
+    .writing-image {
+        display: none;
+    } 
+    
+    .writing-index-item {
+        display: grid;
+
+        grid-template-rows: 15px 30px 80px 10px 30px 30px 15px;
+        grid-template-columns: 1fr 300px 1fr;
+        grid-template-areas: 
+        "  .            .                              .    "
+        " .     writing-title                          .    "
+        " .    writing-blurb                           .    "
+        "  .            .                              .    "
+        " .     writing-author                         .    "
+        " .     writing-date-published                 .    "
+        "  .            .                              .    ";
+        align-items: center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    /* .writing-index-items-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(auto, 400px));
+        width: 100%;
+        justify-content: center;
+        overflow-y: auto;
+    } */
+
+    .writing-header {
+        /* min-width: 695px; */
+        min-width: 90vw;
+    }
+
+}
