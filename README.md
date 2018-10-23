@@ -36,7 +36,7 @@ I want to add some cool functionality to the website. I do not, as of yet, know 
 
 #### Fast Initial Loading
 
-I want to do research on how to offer the fastest initial load time for a user with weak processing power (e.g. old smartphone or computer).
+I want to peform research about how to offer the fastest initial load time for a user with weak processing power (e.g. old smartphone or computer).
 
 ## How to Reach Out
 
