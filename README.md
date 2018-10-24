@@ -38,6 +38,11 @@ I want to add some cool functionality to the website. I do not, as of yet, know 
 
 I want to peform research about how to offer the fastest initial load time for a user with weak processing power (e.g. old smartphone or computer).
 
+
+#### Interactive Themes
+
+Offer a Graphical User Interface where users can control the color palette (theme) of the website. 
+
 ## How to Reach Out
 
 1. Go to <http://benjirothman.com>.
