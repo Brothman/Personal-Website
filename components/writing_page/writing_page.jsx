@@ -19,6 +19,18 @@ class WritingPage extends React.Component {
     render() {
         //date.getTime() gives the unix timecode stamp
         //0 for month represents january
+        const writing37 = {
+            id: 37,
+            title: "Thoughts on a Fall Day",
+            blurb: "The beginnings of truth.",
+            author: "Benji Rothman",
+            datePublished: "Sep 7, 2018",
+            readTime: "5 min read",
+            intTime: 5,
+            intDate: new Date(2018, 8, 7),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Fall+Day.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vTFAjoowloAJYm7SxYpNNgaSoN70de0sfdNMpcxbfaMjVCKUtpOd2SSxa3cmjnexU_J5lxDvU-teh91/pub?embedded=true",
+        };
         const writing36 = {
             id: 36,
             title: "The I-Me Theory",
@@ -453,6 +465,7 @@ class WritingPage extends React.Component {
         };
 
         const writingArr = [
+            writing37,
             writing36,
             writing35,
             writing34,
