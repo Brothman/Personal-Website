@@ -46,6 +46,10 @@ class ProjectsPage extends React.Component {
         // window.open("http://benjirothman.com/");
     }
 
+    visitPlaque() {
+        window.open("http://plaque.herokuapp.com/");
+    }
+
 
     render() {
         const writing1 = {
@@ -88,6 +92,14 @@ class ProjectsPage extends React.Component {
             readTime: "V1.0",
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/Larger_Color_Corrected.jpg"
         };
+        const writing6 = {
+            title: "Plaque",
+            blurb: "Plaque is a barebones instant messaging app. Plaque integrates Emojis into a website built with Ruby on Rails and React.",
+            author: "Benji Rothman",
+            datePublished: "Oct 30, 2018",
+            readTime: "V1.0",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/plaque/plaque.png"
+        };
 
         //only add a fillerDiv element if the screen is smaller than 1008 pixels and we've resized to add a header element
 
@@ -101,6 +113,7 @@ class ProjectsPage extends React.Component {
                     <WritingIndexItem writing={writing3} onClick={this.visitGirlOnTheLedge}/>
                     <WritingIndexItem writing={writing4} onClick={this.visitPaddleBall}/>
                     <WritingIndexItem writing={writing5} onClick={this.visitPersonalWebsite}/>
+                    <WritingIndexItem writing={writing6} onClick={this.visitPlaque}/>
                 </div>
             </div>
         );
