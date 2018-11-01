@@ -52,7 +52,7 @@ class ProjectsPage extends React.Component {
 
 
     render() {
-        const writing1 = {
+        const project1 = {
             title: "MortalNote",
             blurb: "A clone of Evernote built with React, Redux and Ruby on Rails.",
             author: "Benji Rothman",
@@ -60,7 +60,7 @@ class ProjectsPage extends React.Component {
             readTime: "V1.0",
             imageUrl: "https://s3.us-east-2.amazonaws.com/mortalnote-images/wolf-logo.png",
         };
-        const writing2 = {
+        const project2 = {
             title: "Wigo",
             blurb: "I built Wigo with three other web developers. It was my first experience managing a group of developers. ",
             author: "Benji Rothman",
@@ -68,7 +68,7 @@ class ProjectsPage extends React.Component {
             readTime: "V2.0",
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/wigo-logo.png"
         };
-        const writing3 = {
+        const project3 = {
             title: "Girl on the Ledge",
             blurb: "A static website to advertise my father's film, Girl on the Ledge.",
             author: "Benji Rothman",
@@ -76,7 +76,7 @@ class ProjectsPage extends React.Component {
             readTime: "V1.0",
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/GOTL-favicon.ico"
         };
-        const writing4 = {
+        const project4 = {
             title: "Paddle Ball",
             blurb: "A simple game built with HTML, CSS, Javascript and Canvas.",
             author: "Benji Rothman",
@@ -84,7 +84,7 @@ class ProjectsPage extends React.Component {
             readTime: "V1.0",
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/PaddleBall.png"
         };
-        const writing5 = {
+        const project5 = {
             title: "Personal Website",
             blurb: "You're here! Welcome to my personal website. Please click on me to return to the homepage.",
             author: "Benji Rothman",
@@ -92,7 +92,7 @@ class ProjectsPage extends React.Component {
             readTime: "V1.0",
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/Larger_Color_Corrected.jpg"
         };
-        const writing6 = {
+        const project6 = {
             title: "Plaque",
             blurb: "Plaque is a barebones instant messaging app. Plaque integrates Emojis into a website built with Ruby on Rails and React.",
             author: "Benji Rothman",
@@ -108,12 +108,12 @@ class ProjectsPage extends React.Component {
                 <div className="filler-div-header" style={{ minHeight: "90px", width: "100%" }} />
                 <h1 className="writing-header project-header" onClick={this.visitMortalNote}>My Projects</h1>
                 <div className="writing-index-items-container project-index-item-container" >
-                    <WritingIndexItem writing={writing1} onClick={this.visitMortalNote} />
-                    <WritingIndexItem writing={writing2} onClick={this.visitWigo} />
-                    <WritingIndexItem writing={writing3} onClick={this.visitGirlOnTheLedge}/>
-                    <WritingIndexItem writing={writing4} onClick={this.visitPaddleBall}/>
-                    <WritingIndexItem writing={writing5} onClick={this.visitPersonalWebsite}/>
-                    <WritingIndexItem writing={writing6} onClick={this.visitPlaque}/>
+                    <WritingIndexItem writing={project1} onClick={this.visitMortalNote} />
+                    <WritingIndexItem writing={project2} onClick={this.visitWigo} />
+                    <WritingIndexItem writing={project3} onClick={this.visitGirlOnTheLedge}/>
+                    <WritingIndexItem writing={project4} onClick={this.visitPaddleBall}/>
+                    <WritingIndexItem writing={project5} onClick={this.visitPersonalWebsite}/>
+                    <WritingIndexItem writing={project6} onClick={this.visitPlaque}/>
                 </div>
             </div>
         );
