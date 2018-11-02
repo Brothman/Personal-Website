@@ -50,6 +50,10 @@ class ProjectsPage extends React.Component {
         window.open("http://plaque.herokuapp.com/");
     }
 
+    visitMarsMining() {
+        window.open("http://mars-mining.herokuapp.com/");
+    }
+
 
     render() {
         const project1 = {
@@ -100,6 +104,14 @@ class ProjectsPage extends React.Component {
             readTime: "V1.0",
             imageUrl: "https://s3.us-east-2.amazonaws.com/plaque/plaque.png"
         };
+        const project7 = {
+            title: "Mars Mining",
+            blurb: "Mars Mining is a data visualization app. I built the website as part of the Mars Discovery Challenge, hosted by Headlight Labs.",
+            author: "Benji Rothman",
+            datePublished: "Nov 2, 2018",
+            readTime: "V1.0",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/mars-mining/mars-planet.png"
+        };
 
         //only add a fillerDiv element if the screen is smaller than 1008 pixels and we've resized to add a header element
 
@@ -114,6 +126,7 @@ class ProjectsPage extends React.Component {
                     <WritingIndexItem writing={project4} onClick={this.visitPaddleBall}/>
                     <WritingIndexItem writing={project5} onClick={this.visitPersonalWebsite}/>
                     <WritingIndexItem writing={project6} onClick={this.visitPlaque}/>
+                    <WritingIndexItem writing={project7} onClick={this.visitMarsMining}/>
                 </div>
             </div>
         );
