@@ -69,7 +69,7 @@ class WritingPage extends React.Component {
         };
         const writing40 = {
             id: 40,
-            title: "Thank You, Mr. Henderson",
+            title: "Thank You, Mr. Wilson",
             blurb: "An open letter of gratitude to my high school English Teacher.",
             author: "Benji Rothman",
             datePublished: "Jun 20, 2014",
