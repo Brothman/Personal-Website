@@ -19,6 +19,90 @@ class WritingPage extends React.Component {
     render() {
         //date.getTime() gives the unix timecode stamp
         //0 for month represents january
+        const writing44 = {
+            id: 44,
+            title: "Hurt: A Senior Portrait",
+            blurb: "A monologue about love (creative license taken).",
+            author: "Benji Rothman",
+            datePublished: "Jun 14, 2014",
+            readTime: "20 min read",
+            intTime: 20,
+            intDate: new Date(2014, 5, 14),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/tear.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vSK6CdcrD7vaxUtpQZL12IUvmwdHcyokO6taMPj0IEU85IcYbUiZC3ZjOF-sPaMBWRZEMqtgyrVL1Se/pub?embedded=true",
+        };
+        const writing43 = {
+            id: 43,
+            title: "Most Meaningful and Precious Moment",
+            blurb: "A father shows his son the beauty of relationships.",
+            author: "Benji Rothman",
+            datePublished: "May 16, 2014",
+            readTime: "8 min read",
+            intTime: 8,
+            intDate: new Date(2014, 4, 16),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Ben-And-Paul-Hug.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vTTgMEh5VwGLbgXH4740g2BUPXGlzBVzNZYzfguN8-XUiIs1mgrqE3gRCJE9jqqcyRgudwFpO6ab9SV/pub?embedded=true",
+        };
+        const writing42 = {
+            id: 42,
+            title: "Order from Chaos",
+            blurb: "A short story in stream of consciousness style that combines my prose with excerpts from Virginia Woolf's: To The Lighthouse.",
+            author: "Benji Rothman",
+            datePublished: "Oct 21, 2013",
+            readTime: "25 min read",
+            intTime: 25,
+            intDate: new Date(2013, 9, 21),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/chaos-and-order-sm.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vR8fcjmJTdro_Y642Ymrfg-0sSwCJU2_m7HpstFhQ11yBF6rxZrQDzJ3UmEpOFusX_4BDF7nB3iI8wr/pub?embedded=true",
+        };
+        const writing41 = {
+            id: 41,
+            title: "O, O, O, O!",
+            blurb: "The Lost Shakespeare: Hamlet Soliloquy.",
+            author: "Benji Rothman",
+            datePublished: "Nov 11, 2013",
+            readTime: "9 min read",
+            intTime: 9,
+            intDate: new Date(2013, 10, 11),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/hamlet-petrified.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vSxQC3F3xdPSQF2OtM_iY7tW-xn5WFX9EgYaRtIYg98mvknO2Wo8xaZiiPdgXlyR4MixHR2pjgcfEmC/pub?embedded=true",
+        };
+        const writing40 = {
+            id: 40,
+            title: "Thank You, Mr. Henderson",
+            blurb: "An open letter of gratitude to my high school English Teacher.",
+            author: "Benji Rothman",
+            datePublished: "Jun 20, 2014",
+            readTime: "10 min read",
+            intTime: 10,
+            intDate: new Date(2014, 5, 20),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/honesty.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vRFsKMxjpvmPQErDyk6QHw9k_mdw7v--u5vnkByh2RUS1w2AwkG9gBZzrHeu4eRp4saYnM52taa09kq/pub?embedded=true",
+        };
+        const writing39 = {
+            id: 39,
+            title: "Adelaide",
+            blurb: "A young man enters a car with a strange woman. The rest is history.",
+            author: "Benji Rothman",
+            datePublished: "Jun 9, 2017",
+            readTime: "20 min read",
+            intTime: 20,
+            intDate: new Date(2017, 5, 7),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/cape-town.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQpIvCZhUg1ReoMMkDiw6aAMiXgfR1uqUgg9dhsY6pW9EPSJyVnEUwIVJZUdeI-YgJSf3N49vg3Hbnv/pub?embedded=true",
+        };
+        const writing38 = {
+            id: 38,
+            title: "5:25 AM, June 15, 2014",
+            blurb: "The end of an era approaches.",
+            author: "Benji Rothman",
+            datePublished: "Jun 15, 2014",
+            readTime: "10 min read",
+            intTime: 10,
+            intDate: new Date(2014, 5, 15),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/nyc-subway.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vSgkFfxMIN4kOuy53HiuWO8vBkXY0oGHlip3bZyEXJkJrhEGWSYGbQw7fY4_jR7PWEILwP3wQo_5mKr/pub?embedded=true",
+        };
         const writing37 = {
             id: 37,
             title: "Thoughts on a Fall Day",
@@ -465,6 +549,13 @@ class WritingPage extends React.Component {
         };
 
         const writingArr = [
+            writing44,
+            writing43,
+            writing42,
+            writing41,
+            writing40,
+            writing39,
+            writing38,
             writing37,
             writing36,
             writing35,

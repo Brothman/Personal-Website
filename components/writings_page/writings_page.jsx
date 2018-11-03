@@ -74,7 +74,7 @@ class WritingsPage extends React.Component {
         const writing44 = {
             id: 44,
             title: "Hurt: A Senior Portrait",
-            blurb: "A Monologue about Love (Creative License Taken).",
+            blurb: "A monologue about love (creative license taken).",
             author: "Benji Rothman",
             datePublished: "Jun 14, 2014",
             readTime: "20 min read",
@@ -86,7 +86,7 @@ class WritingsPage extends React.Component {
         const writing43 = {
             id: 43,
             title: "Most Meaningful and Precious Moment",
-            blurb: "An Open Letter of Gratitude to my High School English Teacher.",
+            blurb: "A father shows his son the beauty of relationships.",
             author: "Benji Rothman",
             datePublished: "May 16, 2014",
             readTime: "8 min read",
@@ -98,11 +98,11 @@ class WritingsPage extends React.Component {
         const writing42 = {
             id: 42,
             title: "Order from Chaos",
-            blurb: "An Open Letter of Gratitude to my High School English Teacher.",
+            blurb: "A short story in stream of consciousness style that combines my prose with excerpts from Virginia Woolf's: To The Lighthouse.",
             author: "Benji Rothman",
             datePublished: "Oct 21, 2013",
-            readTime: "30 min read",
-            intTime: 30,
+            readTime: "25 min read",
+            intTime: 25,
             intDate: new Date(2013, 9, 21),
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/chaos-and-order-sm.jpg",
             content: "https://docs.google.com/document/d/e/2PACX-1vR8fcjmJTdro_Y642Ymrfg-0sSwCJU2_m7HpstFhQ11yBF6rxZrQDzJ3UmEpOFusX_4BDF7nB3iI8wr/pub?embedded=true",
@@ -122,7 +122,7 @@ class WritingsPage extends React.Component {
         const writing40 = {
             id: 40,
             title: "Thank You, Mr. Henderson",
-            blurb: "An Open Letter of Gratitude to my High School English Teacher.",
+            blurb: "An open letter of gratitude to my high school English Teacher.",
             author: "Benji Rothman",
             datePublished: "Jun 20, 2014",
             readTime: "10 min read",
@@ -146,7 +146,7 @@ class WritingsPage extends React.Component {
         const writing38 = {
             id: 38,
             title: "5:25 AM, June 15, 2014",
-            blurb: "The beginnings of truth.",
+            blurb: "The end of an era approaches.",
             author: "Benji Rothman",
             datePublished: "Jun 15, 2014",
             readTime: "10 min read",
