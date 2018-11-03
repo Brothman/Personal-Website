@@ -71,10 +71,34 @@ class WritingsPage extends React.Component {
 
         //date.getTime() gives the unix timecode stamp
         //0 for month represents january
+        const writing41 = {
+            id: 41,
+            title: "Order from Chaos",
+            blurb: "An Open Letter of Gratitude to my High School English Teacher.",
+            author: "Benji Rothman",
+            datePublished: "Oct 21, 2013",
+            readTime: "30 min read",
+            intTime: 30,
+            intDate: new Date(2013, 9, 21),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/chaos-and-order-sm.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vR8fcjmJTdro_Y642Ymrfg-0sSwCJU2_m7HpstFhQ11yBF6rxZrQDzJ3UmEpOFusX_4BDF7nB3iI8wr/pub?embedded=true",
+        };
+        const writing41 = {
+            id: 41,
+            title: "O, O, O, O!",
+            blurb: "The Lost Shakespeare: Hamlet Soliloquy.",
+            author: "Benji Rothman",
+            datePublished: "Nov 11, 2013",
+            readTime: "9 min read",
+            intTime: 9,
+            intDate: new Date(2013, 10, 11),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/hamlet-petrified.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vSxQC3F3xdPSQF2OtM_iY7tW-xn5WFX9EgYaRtIYg98mvknO2Wo8xaZiiPdgXlyR4MixHR2pjgcfEmC/pub?embedded=true",
+        };
         const writing40 = {
             id: 40,
             title: "Thank You, Mr. Henderson",
-            blurb: "The beginnings of truth.",
+            blurb: "An Open Letter of Gratitude to my High School English Teacher.",
             author: "Benji Rothman",
             datePublished: "Jun 20, 2014",
             readTime: "10 min read",
@@ -86,11 +110,11 @@ class WritingsPage extends React.Component {
         const writing39 = {
             id: 39,
             title: "Adelaide",
-            blurb: "The beginnings of truth.",
+            blurb: "A young man enters a car with a strange woman. The rest is history.",
             author: "Benji Rothman",
             datePublished: "Jun 9, 2017",
-            readTime: "10 min read",
-            intTime: 10,
+            readTime: "20 min read",
+            intTime: 20,
             intDate: new Date(2017, 5, 7),
             imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/cape-town.jpg",
             content: "https://docs.google.com/document/d/e/2PACX-1vQpIvCZhUg1ReoMMkDiw6aAMiXgfR1uqUgg9dhsY6pW9EPSJyVnEUwIVJZUdeI-YgJSf3N49vg3Hbnv/pub?embedded=true",
@@ -553,6 +577,9 @@ class WritingsPage extends React.Component {
         };
 
         const writingArr = [
+            writing40,
+            writing39,
+            writing38,
             writing37,
             writing36,
             writing35,
