@@ -71,6 +71,18 @@ class WritingsPage extends React.Component {
 
         //date.getTime() gives the unix timecode stamp
         //0 for month represents january
+        const writing42 = {
+            id: 42,
+            title: "Most Meaningful and Precious Moment",
+            blurb: "An Open Letter of Gratitude to my High School English Teacher.",
+            author: "Benji Rothman",
+            datePublished: "May 16, 2014",
+            readTime: "8 min read",
+            intTime: 8,
+            intDate: new Date(2014, 4, 16),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Ben-And-Paul-Hug.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vTTgMEh5VwGLbgXH4740g2BUPXGlzBVzNZYzfguN8-XUiIs1mgrqE3gRCJE9jqqcyRgudwFpO6ab9SV/pub?embedded=true",
+        };
         const writing41 = {
             id: 41,
             title: "Order from Chaos",
