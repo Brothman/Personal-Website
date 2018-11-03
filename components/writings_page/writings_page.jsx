@@ -71,6 +71,18 @@ class WritingsPage extends React.Component {
 
         //date.getTime() gives the unix timecode stamp
         //0 for month represents january
+        const writing38 = {
+            id: 38,
+            title: "5:25 AM, June 15, 2014",
+            blurb: "The beginnings of truth.",
+            author: "Benji Rothman",
+            datePublished: "Jun 15, 2014",
+            readTime: "10 min read",
+            intTime: 10,
+            intDate: new Date(2014, 5, 15),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Fall+Day.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vTFAjoowloAJYm7SxYpNNgaSoN70de0sfdNMpcxbfaMjVCKUtpOd2SSxa3cmjnexU_J5lxDvU-teh91/pub?embedded=true",
+        };
         const writing37 = {
             id: 37,
             title: "Thoughts on a Fall Day",
