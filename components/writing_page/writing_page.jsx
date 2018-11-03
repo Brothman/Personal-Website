@@ -19,6 +19,19 @@ class WritingPage extends React.Component {
     render() {
         //date.getTime() gives the unix timecode stamp
         //0 for month represents january
+        
+        const writing45 = {
+            id: 45,
+            title: "12:48 AM, June 20th, 2014",
+            blurb: "Conversation, girls, and leadership.",
+            author: "Benji Rothman",
+            datePublished: "Jun 20, 2014",
+            readTime: "8 min read",
+            intTime: 8,
+            intDate: new Date(2014, 5, 20),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Teardrop-park.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vRi4getEi_xzoxije2077epLmmpncU0jJ53aRrpwBHMuLWCyFhxl6cEV25t4hijCneLwfpFwODL8zWX/pub?embedded=true",
+        };
         const writing44 = {
             id: 44,
             title: "Hurt: A Senior Portrait",
@@ -549,6 +562,7 @@ class WritingPage extends React.Component {
         };
 
         const writingArr = [
+            writing45,
             writing44,
             writing43,
             writing42,
