@@ -71,6 +71,18 @@ class WritingsPage extends React.Component {
 
         //date.getTime() gives the unix timecode stamp
         //0 for month represents january
+        const writing44 = {
+            id: 44,
+            title: "Hurt: A Senior Portrait",
+            blurb: "A Monologue about Love (Creative License Taken).",
+            author: "Benji Rothman",
+            datePublished: "Jun 14, 2014",
+            readTime: "20 min read",
+            intTime: 20,
+            intDate: new Date(2014, 5, 14),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/tear.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vSK6CdcrD7vaxUtpQZL12IUvmwdHcyokO6taMPj0IEU85IcYbUiZC3ZjOF-sPaMBWRZEMqtgyrVL1Se/pub?embedded=true",
+        };
         const writing43 = {
             id: 43,
             title: "Most Meaningful and Precious Moment",
@@ -589,6 +601,7 @@ class WritingsPage extends React.Component {
         };
 
         const writingArr = [
+            writing44,
             writing43,
             writing42,
             writing41,
