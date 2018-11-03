@@ -71,6 +71,30 @@ class WritingsPage extends React.Component {
 
         //date.getTime() gives the unix timecode stamp
         //0 for month represents january
+        const writing40 = {
+            id: 40,
+            title: "Thank You, Mr. Henderson",
+            blurb: "The beginnings of truth.",
+            author: "Benji Rothman",
+            datePublished: "Jun 20, 2014",
+            readTime: "10 min read",
+            intTime: 10,
+            intDate: new Date(2014, 5, 20),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/honesty.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vRFsKMxjpvmPQErDyk6QHw9k_mdw7v--u5vnkByh2RUS1w2AwkG9gBZzrHeu4eRp4saYnM52taa09kq/pub?embedded=true",
+        };
+        const writing39 = {
+            id: 39,
+            title: "Adelaide",
+            blurb: "The beginnings of truth.",
+            author: "Benji Rothman",
+            datePublished: "Jun 9, 2017",
+            readTime: "10 min read",
+            intTime: 10,
+            intDate: new Date(2017, 5, 7),
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/cape-town.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vQpIvCZhUg1ReoMMkDiw6aAMiXgfR1uqUgg9dhsY6pW9EPSJyVnEUwIVJZUdeI-YgJSf3N49vg3Hbnv/pub?embedded=true",
+        };
         const writing38 = {
             id: 38,
             title: "5:25 AM, June 15, 2014",
@@ -80,8 +104,8 @@ class WritingsPage extends React.Component {
             readTime: "10 min read",
             intTime: 10,
             intDate: new Date(2014, 5, 15),
-            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/Fall+Day.jpg",
-            content: "https://docs.google.com/document/d/e/2PACX-1vTFAjoowloAJYm7SxYpNNgaSoN70de0sfdNMpcxbfaMjVCKUtpOd2SSxa3cmjnexU_J5lxDvU-teh91/pub?embedded=true",
+            imageUrl: "https://s3.us-east-2.amazonaws.com/benji-personal-website/writing-images/nyc-subway.jpg",
+            content: "https://docs.google.com/document/d/e/2PACX-1vSgkFfxMIN4kOuy53HiuWO8vBkXY0oGHlip3bZyEXJkJrhEGWSYGbQw7fY4_jR7PWEILwP3wQo_5mKr/pub?embedded=true",
         };
         const writing37 = {
             id: 37,
