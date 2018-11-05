@@ -23,7 +23,7 @@ class WritingPage extends React.Component {
         const writing45 = {
             id: 45,
             title: "12:48 AM, June 20th, 2014",
-            blurb: "Conversation, girls, and leadership.",
+            blurb: "Conversation, a girl, and leadership.",
             author: "Benji Rothman",
             datePublished: "Jun 20, 2014",
             readTime: "8 min read",
