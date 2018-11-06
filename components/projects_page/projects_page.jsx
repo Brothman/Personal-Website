@@ -90,7 +90,7 @@ class ProjectsPage extends React.Component {
         };
         const project5 = {
             title: "Personal Website",
-            blurb: "You're here! Welcome to my personal website. Please click on me to return to the homepage.",
+            blurb: "You are here! Welcome to my personal website. Please click on me to return to the homepage.",
             author: "Benji Rothman",
             datePublished: "Oct 3, 2018",
             readTime: "V1.0",
